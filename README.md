@@ -2,11 +2,10 @@
   <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
 </p>
 
-<h1 align="center">بوابة أسبوع الفضاء العالمي | ثانوية الفرسان الأهلية</h1>
+<h1 align="center" id="arabic">بوابة أسبوع الفضاء العالمي | ثانوية الفرسان الأهلية</h1>
 <p align="center"><strong>البوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026)</strong></p>
 
 <p align="center">
-  <a href="#english">English Version ↓</a> •
   <a href="https://gmc2000.github.io/World-Space-Week-Portal/">🌐 زيارة المنصة مباشرة</a>
 </p>
 
@@ -79,100 +78,104 @@
 * الطالب: **محمد الحازمي**
 * الطالب: **أحمد بيت المال**
 * الطالب: **عبدالحميد طلعت**
+
+
+
 ---
 
 ## الترخيص
 
 تم نشر هذه المنصة التعليمية بموجب [MIT رخصة](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE.ar.md) لأسبوع الفضاء العالمي 2026.
 
+<p align="center">
+  <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
+</p>
+
+<h1 align="center" id="english">World Space Week Portal | Al-Fursan Private High School</h1>
+<p align="center"><strong>Interactive Web Portal for World Space Week (2026)</strong></p>
+
+<p align="center">
+  <a href="https://gmc2000.github.io/World-Space-Week-Portal/">🌐 Visit Platform Live</a>
+</p>
+---
+
+An interactive educational web platform developed on the occasion of **World Space Week 2026** by **Al-Fursan Private High School in Makkah**. Designed with a modern **Dark Glassmorphism** aesthetic, the platform combines real-time space weather monitoring, deep-space AI applications, orbital physics simulations, and interactive showcases for both the Saudi Space sector and NASA.
+
+Built entirely using **HTML5, CSS3, and Vanilla JavaScript** — free of heavy frameworks, fully responsive across all screen sizes and mobile devices, and deployed directly via **GitHub Pages**.
 
 ---
 
-An interactive scientific web platform built for **World Space Week 2026** at **Al-Forsan High School in Makkah**. Designed with a modern **Dark Glassmorphism UI**, the portal combines real-time space weather data, interactive physics simulations, deep space discovery modules, and an AI space lab — offering students and visitors an immersive educational journey.
+## Key Features & Scientific Pillars
 
-Built with **HTML5, CSS3, and Vanilla JavaScript** — zero heavy frameworks, fully responsive, and hosted directly on **GitHub Pages**.
-
----
-
-## Live Preview
-
-|  |  |
-| --- | --- |
-|  |  |
-
----
-
-## Key Features
-
-* **AI Space Lab** — explore four foundational pillars of AI in deep space:
-* Autonomous navigation (*AutoNav*) on Mars rovers.
-* Deep learning algorithms detecting exoplanets via transit light curves.
-* Orbital debris shield & Non-Terrestrial Networks (*NTN*).
-* Intelligent astronaut assistants (*CIMON*) and an interactive mission-decision simulator.
+* **AI Space Lab** — Exploring artificial intelligence applications in cosmic exploration:
+* Autonomous navigation for Martian rovers (*AutoNav*).
+* Exoplanet hunting and deep-learning light curve analysis.
+* Smart orbital shielding and space debris avoidance to safeguard satellites and Non-Terrestrial Networks (*NTN*).
+* Smart astronaut assistants (*CIMON*) and an interactive autonomous decision simulator.
 
 
-* **Live Space Weather Radar** — visual sweep radar and telemetry monitoring NOAA scales (**G-Scale, S-Scale, R-Scale**) alongside real-time solar wind speed, proton density, and geomagnetic field indices.
-* **3D Solar System & Comparison Matrix** — physical and astronomical data for all 8 planets, the Sun, and Moon phases, paired with a dynamic comparison tool for gravity, diameter, and distance.
-* **Saudi Space Sector (CST & SSA)** — highlights the Kingdom's achievements in space exploration:
-* Saudi Space Agency (**SSA**) & Communications, Space & Technology Commission (**CST**).
-* Historic Ax-2 space mission (*Rayyanah Barnawi & Ali AlQarni*) and HRH Prince Sultan bin Salman.
+* **Live Space Weather Radar** — Visual radar sweeping and continuous monitoring of NOAA scales (**G-Scale, S-Scale, and R-Scale**), featuring live metrics for solar wind speed, proton density, and interplanetary magnetic field strength.
+* **Solar System & Interactive Comparison Tool** — 3D cards for the eight planets, the Sun, and lunar phases, alongside a real-time comparison tool for surface gravity, diameter, and distance between any two celestial bodies.
+* **The Kingdom Toward Space (Saudi Space Pavilion)** — Documenting national space sector milestones:
+* Communications, Space and Technology Commission (**CST**) and the Saudi Space Agency (**SSA**).
+* Documenting the historic Ax-2 mission (*Rayyanah Barnawi & Ali Al-Qarni*) and the pioneering journey of HRH Prince Sultan bin Salman.
 
 
-* **NASA Discovery Hub** — direct integrations with:
-* 3D interactive NASA Eyes (*Solar System, Earth, Asteroids*).
-* Astronomy Picture of the Day (*NASA APOD*) with live API support.
-* James Webb Space Telescope (*JWST*) vs. Hubble comparisons.
-* Mars weather and Perseverance rover imagery.
+* **Interactive NASA Pavilion** — Direct integration featuring:
+* NASA 3D simulator (*NASA Eyes on the Solar System*).
+* Astronomy Picture of the Day (*NASA APOD*) fetched directly via the NASA API.
+* Interactive comparison between the Hubble Space Telescope and the James Webb Space Telescope (*JWST*).
+* Live Martian weather updates and Perseverance rover photo gallery.
 
 
-* **PhET Interactive Physics Lab** — embedded simulation sandboxes developed by the University of Colorado Boulder:
-* Gravity and planetary orbits.
-* Universal gravitational force calculator.
-* Multi-body planetary systems & projectile motion.
+* **PhET Physics Simulations Lab** — Interactive virtual experiments accredited by the University of Colorado:
+* Gravity and orbital mechanics.
+* Gravitational force measurement in Newtons and the Inverse Square Law.
+* Rocket projectile motion and multi-body systems.
 
 
-* **Planetary Weight Calculator** — interactive tool to calculate weight across multiple celestial bodies based on surface gravity.
-* **Space Quiz & Certified Digital Credential** — a knowledge challenge that generates a printable, customized certificate of completion on the fly.
-* **Project Report Modal** — embedded, full-screen documentation report ready for viewing and PDF export.
+* **Celestial Weight Calculator** — A live calculator to determine a user's weight across various planets, the Moon, and the Sun based on local gravitational acceleration.
+* **Space Challenge & Verified Digital Certificate** — An interactive space knowledge quiz that generates an official, printable Certificate of Appreciation in the student's name, exportable directly to PDF.
+* **Documented Report Viewer** — A full-screen viewer showcasing the comprehensive event report with print support.
 
 ---
 
 ## Project Structure
 
 ```text
-├── index.html          # Core single-page interactive application
-├── report.html         # Comprehensive documentation & event report
-├── LICENSE             # Project license (MIT License)
+├── index.html          # Main application file & comprehensive interactive interface
+├── report.html         # Final event documentation & comprehensive report
+├── LICENSE             # Official project license (MIT License)
 ├── LICENSE.ar.md       # Arabic translation of the license
-├── README.md           # Project documentation
-└── images/             # Visual assets and media directory
-    ├── school_logo.png # Al-Forsan High School emblem
-    ├── planets/        # High-res celestial bodies
-    ├── astronauts/     # Arab and international pioneers
-    ├── nasa/           # NASA & JWST imagery
-    └── saudi_space/    # CST and SSA official branding
+├── README.md           # Documentation guide & project overview
+└── images/             # Media assets & approved graphics
+    ├── school_logo.png # Al-Fursan Private Schools logo
+    ├── planets/        # Solar System planet imagery
+    ├── astronauts/     # Arab & international astronaut portraits
+    ├── nasa/           # NASA & James Webb Space Telescope imagery
+    └── saudi_space/    # Saudi Space sector logos & media
 
 ```
 
 ---
 
-## Live Access & Deployment
+## Deployment & Live Access
 
-The portal is continuously deployed and accessible globally via GitHub Pages:
+The platform is hosted and deployed entirely via GitHub Pages and can be accessed directly from any browser:
 
-**[🌐 Visit the Live Portal](https://gmc2000.github.io/World-Space-Week-Portal/)**
+**[🌐 Visit the World Space Week Platform](https://gmc2000.github.io/World-Space-Week-Portal/)**
 
 ---
 
-## Project Team & Credits
+## Project Credits & Educational Accreditation
 
-* **School:** Al-Forsan Private High School, Makkah, Saudi Arabia
-* **General Supervisor & School Principal:** Mr. Mohsen Ruddah Allah Al-Saeedi
-* **Activity Leader & Supervising Teacher:** Mr. Ayman Al-Banna
-* **Student Development Team:**
-* **Mohammed Alhazmi**
-* **Ahmed Bait Al-Mal**
-* **Abdulhamid Talaat**
+* **School:** Al-Fursan Private High School, Makkah
+* **General Supervisor & School Principal:** Mr. Mohsen Raddatullah Al-Saeedi
+* **Supervising Teacher & Activity Leader:** Mr. Ayman Al-Banna
+* **Student Development & Execution Team:**
+* Student: **Mohammed Al-Hazmi**
+* Student: **Ahmed Beit El-Mal**
+* Student: **Abdulhamid Talaat**
 
 
 
@@ -183,10 +186,5 @@ The portal is continuously deployed and accessible globally via GitHub Pages:
 This educational platform is published under the [MIT License](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE) for World Space Week 2026.
 
 ```
-
----
-
-### الطريقة الثانية (إذا كان زر النسخ في المتصفح معطلاً):
-إذا كان زر النسخ لا يستجيب في متصفحك، أخبرني فوراً وسأقوم بإنشاء الملف لك كملف جاهز للتحميل، أو تقسيم النص إلى جزأين صغيرين يسهل تظليلهما ونسخهما بالماوس!
 
 ```
