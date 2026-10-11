@@ -1,3 +1,4 @@
+<img id="school-logo-preview" src="https://alforsan.edu.sa/wp-content/uploads/2021/08/logo.png" alt="شعار مدارس الفرسان" style="display:block;">
 # 🌌 بوابة أسبوع الفضاء العالمي | World Space Week Portal
 
 > **المنصة العلمية التفاعلية لأسبوع الفضاء العالمي بتصميم الواجهات الزجاجية الحديثة (Dark Glassmorphism)**  
