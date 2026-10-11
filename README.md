@@ -7,10 +7,7 @@
 <h1 align="center">بوابة أسبوع الفضاء العالمي | ثانوية الفرسان الأهلية</h1>
 <p align="center"><strong> البوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026) </strong></p>
 
-<p align="center">
-  <a href="#arabic">العربية ↓</a> •
-  <a href="https://gmc2000.github.io/-1/">Live Demo ↗</a>
-</p>
+
 
 # بوابة أسبوع الفضاء العالمي — ثانوية الفرسان الأهلية
 
@@ -76,7 +73,7 @@
 
 المنصة مستضافة ومنشورة بالكامل عبر خوادم GitHub Pages ويمكن استعراضها مباشرة من أي متصفح:
 
-**[🌐 زيارة منصة أسبوع الفضاء العالمي](https://gmc2000.github.io/-1/)**
+**[🌐 زيارة منصة أسبوع الفضاء العالمي](https://gmc2000.github.io/World-Space-Week-Portal/)**
 
 للتشغيل والتجربة محلياً:
 
@@ -108,10 +105,7 @@ git clone [https://github.com/GMC2000/-1.git](https://github.com/GMC2000/-1.git)
 <h1 align="center"> World Space Week Portal | Al-Forsan High School in Makkah </h1>
 <p align="center"><strong>World Space Week Interactive Web Portal (2026)</strong></p>
 
-<p align="center">
-  <a href="#arabic">العربية ↓</a> •
-  <a href="https://gmc2000.github.io/-1/">Live Demo ↗</a>
-</p>
+
 
 An interactive scientific web platform built for **World Space Week 2026** at **Al-Forsan High School in Makkah**. Designed with a modern **Dark Glassmorphism UI**, the portal combines real-time space weather data, interactive physics simulations, deep space discovery modules, and an AI space lab — offering students and visitors an immersive educational journey.
 
@@ -175,7 +169,7 @@ Built with **HTML5, CSS3, and Vanilla JavaScript** — zero heavy frameworks, fu
 
 The portal is continuously deployed and accessible globally via GitHub Pages:
 
-**[🌐 Visit the Live Portal](https://gmc2000.github.io/-1/)**
+**[🌐 Visit the Live Portal](https://gmc2000.github.io/World-Space-Week-Portal/)**
 
 To run locally:
 
