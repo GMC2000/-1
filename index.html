@@ -1108,4 +1108,1075 @@
 
     .phet-actions {
       display: flex;
-      align-items
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .phet-action-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--glass-border);
+      color: #ffffff;
+      padding: 7px 15px;
+      border-radius: var(--radius-pill);
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: var(--trans-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      font-family: var(--font-ar);
+    }
+
+    .phet-action-btn:hover {
+      background: rgba(0, 242, 254, 0.2);
+      border-color: var(--cyan-neon);
+      box-shadow: 0 0 12px var(--cyan-glow);
+      color: #ffffff;
+    }
+
+    .phet-frame-wrapper {
+      position: relative;
+      width: 100%;
+      height: 640px;
+      background: #030612;
+      border: 1.5px solid rgba(0, 242, 254, 0.3);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(0, 242, 254, 0.12);
+      transition: var(--trans-smooth);
+    }
+
+    .phet-frame-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .weight-calc-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .weight-input-group {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      max-width: 480px;
+    }
+
+    .input-glass-num {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--glass-border);
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-num);
+      font-size: 1.2rem;
+      outline: none;
+    }
+
+    .weight-results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+
+    .weight-card-res {
+      background: var(--bg-card-inner);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      text-align: center;
+      transition: var(--trans-smooth);
+    }
+
+    .weight-card-res:hover {
+      border-color: var(--cyan-neon);
+      transform: translateY(-3px);
+    }
+
+    .weight-card-res span.name { font-size: 0.9rem; color: var(--text-muted); display: block; margin-bottom: 4px; }
+    .weight-card-res span.w { font-family: var(--font-num); font-size: 1.3rem; font-weight: 800; color: var(--cyan-neon); }
+
+    /* ==========================================================================
+       9. قطاع الفضاء السعودي وجناح ناسا
+       ========================================================================== */
+    .saudi-space-banner {
+      background: linear-gradient(135deg, rgba(6, 78, 59, 0.45) 0%, rgba(3, 20, 16, 0.9) 60%, rgba(7, 12, 28, 0.95) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      border-radius: var(--radius-lg);
+      padding: 26px 32px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      box-shadow: 0 12px 35px rgba(16, 185, 129, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .saudi-agencies-logos {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .saudi-logo-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 8px 16px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      transition: var(--trans-smooth);
+      height: 58px;
+    }
+
+    .saudi-logo-card:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    }
+
+    .saudi-logo-card img {
+      max-height: 42px;
+      max-width: 130px;
+      object-fit: contain;
+    }
+
+    .saudi-pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 22px;
+      margin-bottom: 25px;
+    }
+
+    .saudi-pillar-card {
+      background: var(--bg-card-inner);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      transition: var(--trans-smooth);
+      position: relative;
+    }
+
+    .saudi-pillar-card:hover {
+      border-color: var(--emerald-neon);
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .saudi-pillar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .badge-cst {
+      background: rgba(0, 242, 254, 0.15);
+      border: 1px solid var(--cyan-neon);
+      color: var(--cyan-neon);
+    }
+
+    .badge-ssa {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--emerald-neon);
+      color: var(--emerald-neon);
+    }
+
+    .saudi-metrics-deck {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-bottom: 24px;
+    }
+
+    .saudi-metric-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-align: center;
+      transition: var(--trans-smooth);
+    }
+
+    .saudi-metric-pill .num {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--emerald-neon);
+      font-family: var(--font-num);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .saudi-metric-pill .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .nasa-header-banner {
+      background: linear-gradient(135deg, rgba(11, 61, 145, 0.4) 0%, rgba(3, 6, 18, 0.85) 100%);
+      border: 1px solid rgba(0, 242, 254, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 24px 30px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      box-shadow: 0 10px 30px rgba(11, 61, 145, 0.25);
+    }
+
+    .nasa-brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .nasa-logo-img {
+      width: 68px;
+      height: 56px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.5));
+    }
+
+    .nasa-stats-pillbox {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nasa-stat-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nasa-stat-pill strong {
+      color: var(--cyan-neon);
+      font-family: var(--font-num);
+    }
+
+    .nasa-eyes-card {
+      background: var(--bg-card-inner);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .nasa-eyes-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+
+    .nasa-eyes-viewport {
+      position: relative;
+      width: 100%;
+      height: 580px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      background: #000;
+    }
+
+    .nasa-eyes-viewport iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* ==========================================================================
+       10. مسابقة الفضاء والشهادة الرقمية
+       ========================================================================== */
+    .quiz-container-box {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg-card-inner);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+    }
+
+    .quiz-question-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .quiz-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .quiz-opt-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--glass-border);
+      color: var(--text-main);
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: right;
+      transition: var(--trans-smooth);
+      font-family: var(--font-ar);
+    }
+
+    .quiz-opt-btn:hover {
+      background: rgba(0, 242, 254, 0.15);
+      border-color: var(--cyan-neon);
+      transform: translateX(-4px);
+    }
+
+    .quiz-opt-btn.correct {
+      background: rgba(16, 185, 129, 0.25);
+      border-color: var(--emerald-neon);
+      color: #ffffff;
+    }
+
+    .quiz-opt-btn.wrong {
+      background: rgba(244, 63, 94, 0.25);
+      border-color: var(--rose-neon);
+      color: #ffffff;
+    }
+
+    #certificate-zone {
+      display: none;
+      margin-top: 35px;
+      text-align: center;
+      animation: fadeInSim 0.5s ease;
+    }
+
+    .certificate-frame {
+      border: 3px double var(--cyan-neon);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      background: radial-gradient(circle at center, rgba(13, 22, 54, 0.95), rgba(7, 10, 24, 0.98));
+      box-shadow: 0 0 50px rgba(0, 242, 254, 0.3);
+      position: relative;
+    }
+
+    .cert-heading-top {
+      font-size: 0.85rem;
+      color: var(--gold-royal);
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .cert-main-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, #ffffff, var(--cyan-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cert-holder-name {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--gold-royal);
+      margin: 15px 0;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+
+    .cert-signatures {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .modal-curtain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(3, 6, 16, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--trans-smooth);
+    }
+
+    .modal-curtain.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-glass-dialog {
+      width: 100%;
+      max-width: 580px;
+      background: rgba(14, 20, 44, 0.96);
+      border: 1px solid rgba(0, 242, 254, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 45px rgba(0, 242, 254, 0.2);
+      position: relative;
+      transform: scale(0.92) translateY(20px);
+      transition: var(--trans-smooth);
+    }
+
+    .modal-curtain.open .modal-glass-dialog {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-x-btn {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--trans-smooth);
+    }
+
+    .modal-x-btn:hover {
+      background: rgba(244, 63, 94, 0.25);
+      border-color: var(--rose-neon);
+      color: var(--rose-neon);
+      transform: rotate(90deg);
+    }
+
+    .floating-report-btn {
+      position: fixed;
+      bottom: 25px;
+      left: 25px;
+      z-index: 990;
+      background: linear-gradient(135deg, rgba(0, 242, 254, 0.95), rgba(79, 172, 254, 0.95));
+      color: #030612;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 8px 25px rgba(0, 242, 254, 0.4), 0 0 15px var(--cyan-glow);
+      padding: 11px 22px;
+      border-radius: var(--radius-pill);
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: var(--trans-smooth);
+      backdrop-filter: var(--glass-blur);
+    }
+
+    .floating-report-btn:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 14px 35px rgba(0, 242, 254, 0.7), 0 0 25px var(--cyan-neon);
+      color: #030612;
+    }
+
+    footer.main-footer-glass {
+      border-top: 1px solid var(--glass-border);
+      background: rgba(5, 7, 18, 0.95);
+      backdrop-filter: var(--glass-blur);
+      padding: 45px 0 30px;
+    }
+
+    .footer-content-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 25px;
+    }
+
+    .footer-col h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .footer-col p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .footer-credits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .footer-credits-list strong {
+      color: var(--cyan-neon);
+    }
+
+    .footer-bottom-line {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    @media (max-width: 1024px) {
+      .weather-radar-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 680px) {
+      .navbar-floating { padding: 8px 14px; }
+      .brand-headings h1 { font-size: 0.95rem; }
+      .school-logo-slot { height: 38px; }
+      .platform-container { padding-top: 110px; }
+      .leadership-strip { margin-top: 18px; }
+      .section-glass-block { padding: 20px; }
+      .compare-selectors-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- خلفية الفضاء العميقة التفاعلية -->
+  <canvas id="space-canvas"></canvas>
+
+  <div class="cosmic-nebula nebula-purple"></div>
+  <div class="cosmic-nebula nebula-blue"></div>
+  <div class="cosmic-nebula nebula-cyan"></div>
+
+  <!-- [1] الشريط العلوي الزجاجي العائم (Floating Glass Navbar) -->
+  <nav class="navbar-floating">
+    <div class="brand-cluster">
+      <div class="school-logo-slot" title="مدارس الفرسان الأهلية بمكة المكرمة">
+        <img id="school-logo-preview" src="images/school_logo.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg'" alt="شعار مدارس الفرسان الأهلية بمكة المكرمة">
+      </div>
+
+      <div class="brand-headings">
+        <h1>بوابة أسبوع الفضاء العالمي</h1>
+        <span>ثانوية الفرسان الأهلية بمكة المكرمة</span>
+      </div>
+    </div>
+
+    <!-- شارة فخرية متحركة مستمرة لأسماء الطلاب المنفذين -->
+    <div class="dev-badge-capsule" title="فريق العمل والتنفيذ">
+      <span class="status-pulse-dot"></span>
+      <div class="dev-marquee-track">
+        <div class="dev-names-wrap">
+          <span>تنفيذ: <strong>محمد الحازمي</strong></span>
+          <span class="dev-sep">✦</span>
+          <span>تنفيذ: <strong>أحمد بيت المال</strong></span>
+          <span class="dev-sep">✦</span>
+          <span>تنفيذ: <strong>عبدالحميد طلعت</strong></span>
+        </div>
+        <div class="dev-names-wrap" aria-hidden="true">
+          <span class="dev-sep">✦</span>
+          <span>تنفيذ: <strong>محمد الحازمي</strong></span>
+          <span class="dev-sep">✦</span>
+          <span>تنفيذ: <strong>أحمد بيت المال</strong></span>
+          <span class="dev-sep">✦</span>
+          <span>تنفيذ: <strong>عبدالحميد طلعت</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- أزرار التنقل السريع -->
+    <div class="nav-tools-group">
+      <a href="#ai-space-hub" class="nav-btn-icon nav-btn-accent" title="مختبر الذكاء الاصطناعي في الفضاء">
+        <span>🤖 الذكاء الاصطناعي</span>
+      </a>
+      <a href="#saudi-space-section" class="nav-btn-icon nav-saudi-btn" title="الانتقال لقطاع الفضاء والاتصالات السعودي">
+        <span>🇸🇦 الفضاء السعودي</span>
+      </a>
+      <a href="#nasa-hub" class="nav-btn-icon nav-nasa-btn" title="الانتقال لجناح وكالة ناسا">
+        <span>🪐 جناح ناسا</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="platform-container">
+
+    <!-- [2] بطاقات الإشراف والقيادة التعليمية -->
+    <section class="leadership-strip">
+      <div class="leadership-grid">
+        <div class="leader-card-glass">
+          <div class="leader-icon-circle gold">🏛️</div>
+          <div class="leader-details">
+            <span class="role-tag role-gold">مدير المدرسة والمشرف العام</span>
+            <h3>أ. محسن ردة الله الصاعدي</h3>
+            <p>مدير المدرسة والمشرف العام | رعاية الإبداع العلمي والابتكار الطلابي</p>
+          </div>
+        </div>
+
+        <div class="leader-card-glass mentor-accent">
+          <div class="leader-icon-circle cyan">🔭</div>
+          <div class="leader-details">
+            <span class="role-tag role-cyan">رائد النشاط والمعلم المشرف</span>
+            <h3>أ. أيمن البنا</h3>
+            <p>المعلم المشرف | التوجيه العلمي والإشراف على أسبوع الفضاء</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- شريط الأخبار الفضائية العاجلة -->
+    <div class="breaking-news-bar">
+      <div class="news-badge">
+        <span class="pulse-icon">⚡</span>
+        <span>أخبار الفضاء العاجلة</span>
+      </div>
+      <div class="news-marquee-track">
+        <div class="news-marquee-inner">
+          <div class="news-marquee-group">
+            <div class="news-item"><span class="source">[وكالة الفضاء السعودية SSA]</span> استمرار الاستعدادات المدارية لمهمات بحثية نوعية وبناء وتأهيل الكفاءات الوطنية.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[تلسكوب جيمس ويب JWST]</span> رصد عناقيد مجرية بدائية فائقة اللمعان تشكلت في أول 300 مليون سنة من عمر الكون.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[مهمة أرتميس 2 NASA]</span> نجاح الاختبارات المتكاملة لمحركات كبسولة أوريون تمهيداً لرحلة مأهولة حول مدار القمر.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[محطة الفضاء الدولية ISS]</span> رواد وباحثون عرب ينفذون 14 تجربة طبية وخلوية متقدمة في بيئة الجاذبية الصغرى.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[سبيس إكس Starship]</span> الاستعداد لرحلة تجريبية مدارية جديدة لاختبار إعادة التزود بالوقود ونقل الحمولات الثقيلة.</div>
+          </div>
+          <div class="news-marquee-group" aria-hidden="true">
+            <div class="news-item"><span class="source">[وكالة الفضاء السعودية SSA]</span> استمرار الاستعدادات المدارية لمهمات بحثية نوعية وبناء وتأهيل الكفاءات الوطنية.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[تلسكوب جيمس ويب JWST]</span> رصد عناقيد مجرية بدائية فائقة اللمعان تشكلت في أول 300 مليون سنة من عمر الكون.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[مهمة أرتميس 2 NASA]</span> نجاح الاختبارات المتكاملة لمحركات كبسولة أوريون تمهيداً لرحلة مأهولة حول مدار القمر.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[محطة الفضاء الدولية ISS]</span> رواد وباحثون عرب ينفذون 14 تجربة طبية وخلوية متقدمة في بيئة الجاذبية الصغرى.</div>
+            <span class="news-bullet-sep">✦</span>
+            <div class="news-item"><span class="source">[سبيس إكس Starship]</span> الاستعداد لرحلة تجريبية مدارية جديدة لاختبار إعادة التزود بالوقود ونقل الحمولات الثقيلة.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- [قسم خاص] الذكاء الاصطناعي في الفضاء -->
+    <section class="section-glass-block" id="ai-space-hub">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">🤖</span>
+          <span>مختبر الذكاء الاصطناعي واستكشاف الفضاء العميق (AI Space Lab)</span>
+        </h2>
+        <span style="font-size:0.85rem; color:var(--cyan-neon); font-family:var(--font-code);">إعداد: محمد الحازمي & أحمد بيت المال | إشراف: أ. أيمن البنا</span>
+      </div>
+
+      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:28px; line-height:1.75;">
+        يمثل الذكاء الاصطناعي العقل المدبر لرحلات الفضاء الحديثة؛ حيث يمكن المركبات الفضائية من اتخاذ قرارات مصيرية فورية وتفادي المخاطر الكونية دون انتظار إشارات التحكم الأرضية.
+      </p>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:22px; margin-bottom:30px;">
+        <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--cyan-neon);">
+          <div style="font-size:2rem; margin-bottom:10px;">🚗🔴</div>
+          <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">القيادة الذاتية (AutoNav)</h3>
+          <div style="font-size:0.78rem; color:var(--cyan-neon); font-weight:700; margin-bottom:10px;">مركبة Perseverance على المريخ</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            تستخدم خوارزميات الرؤية الحاسوبية والخرائط ثلاثية الأبعاد لتحليل الصخور وتحديد المسار الآمن وتجاوز العقبات تلقائياً دون تدخل بشري مباشر.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--violet-neon);">
+          <div style="font-size:2rem; margin-bottom:10px;">🔭🪐</div>
+          <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">صيد الكواكب الخارجية (Exoplanets)</h3>
+          <div style="font-size:0.78rem; color:var(--violet-neon); font-weight:700; margin-bottom:10px;">خوارزميات التعلم العميق (Deep Learning)</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            فحص ملايين منحنيات الضوء لبيانات التلسكوبات، حيث ترصد الشبكات العصبية انخفاضات الضوء الدقيقة وتكتشف كواكب جديدة صالحة للحياة.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--emerald-neon);">
+          <div style="font-size:2rem; margin-bottom:10px;">🛰️🛡️</div>
+          <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">درع المدارات الذكي</h3>
+          <div style="font-size:0.78rem; color:var(--emerald-neon); font-weight:700; margin-bottom:10px;">الشبكات غير الأرضية (NTN) وحماية الأقمار</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            حساب احتمالات التصادم المداري مع آلاف قطع الحطام الفضائي بدقة، وتنفيذ مناورات تفادٍ تلقائية فورية لحماية الأقمار الصناعية وشبكات الاتصالات.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-card-inner); border:1px solid var(--gold-royal); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--gold-royal);">
+          <div style="font-size:2rem; margin-bottom:10px;">👨‍🚀💬</div>
+          <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">المساعد الفضائي التفاعلي (CIMON)</h3>
+          <div style="font-size:0.78rem; color:var(--gold-royal); font-weight:700; margin-bottom:10px;">محطة الفضاء الدولية (ISS)</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            روبوت ذكاء اصطناعي طائر مزود بمعالجة اللغة الطبيعية، يعاون الرواد في إجراء التجارب العلمية المعقدة وإدارة أنظمة المحطة.
+          </p>
+        </div>
+      </div>
+
+      <div style="background:radial-gradient(circle at center, rgba(13,22,54,0.95), rgba(7,10,24,0.98)); border:1px solid rgba(0,242,254,0.3); border-radius:var(--radius-lg); padding:25px;">
+        <h3 style="font-size:1.15rem; font-weight:800; color:var(--cyan-neon); margin-bottom:10px;">
+          ⚡ محاكي قرارات الملاحة الذاتية لمسبار الفضاء (AI Trajectory Simulator)
+        </h3>
+        <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:16px;">
+          اختر السيناريو الفضائي ولاحظ كيف يتخذ نموذج الذكاء الاصطناعي القرار الصحيح تلقائياً:
+        </p>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:15px;">
+          <button class="nav-btn-icon" onclick="simulateAiAction('obstacle')">🪨 رصد صخرة ضخمة مفاجئة</button>
+          <button class="nav-btn-icon" onclick="simulateAiAction('flare')">☀️ رصد وهج شمسي حاد</button>
+          <button class="nav-btn-icon" onclick="simulateAiAction('signal')">📡 انقطاع إشارة الأرض تماماً</button>
+        </div>
+
+        <div id="ai-decision-output" style="background:rgba(255,255,255,0.04); border:1px solid var(--glass-border); border-radius:var(--radius-sm); padding:14px 18px; font-size:0.88rem; color:#ffffff;">
+          🟢 حالة النظام: محرك الذكاء الاصطناعي يعمل بكفاءة بانتظار قراءة الحساسات...
+        </div>
+      </div>
+    </section>
+
+    <!-- [3] رادار الطقس الفضائي الحي -->
+    <section class="section-glass-block" id="space-weather-section">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">📡</span>
+          <span>رادار الطقس الفضائي الحي والعواصف الشمسية (Live Space Weather)</span>
+        </h2>
+        <span style="font-size:0.85rem; color:var(--cyan-neon); font-family:var(--font-code);">تحديث فوري من مراصد NOAA / NASA</span>
+      </div>
+
+      <div class="weather-radar-grid">
+        <div class="radar-screen-wrap">
+          <canvas id="radar-canvas"></canvas>
+        </div>
+
+        <div class="radar-stats-column">
+          <div class="noaa-scales-grid">
+            <div class="scale-card">
+              <div class="scale-card-head">
+                <span class="scale-code">G1</span>
+                <span class="scale-level-tag">طبيعي / طفيف</span>
+              </div>
+              <h4 class="scale-name">العواصف المغناطيسية الأرضية</h4>
+              <p class="scale-impact">تقلبات طفيفة في شبكات الطاقة في أقصى الشمال وظهور الشفق القطبي عند خطوط العرض العليا.</p>
+            </div>
+
+            <div class="scale-card">
+              <div class="scale-card-head">
+                <span class="scale-code">S0</span>
+                <span class="scale-level-tag">آمن ومستقر</span>
+              </div>
+              <h4 class="scale-name">عواصف الإشعاع الشمسي</h4>
+              <p class="scale-impact">مستويات الإشعاع ضمن الحدود الآمنة للرواد في محطة الفضاء الدولية وركاب الطائرات القطبية.</p>
+            </div>
+
+            <div class="scale-card">
+              <div class="scale-card-head">
+                <span class="scale-code">R1</span>
+                <span class="scale-level-tag active-alert">تعتيم طفيف (R1)</span>
+              </div>
+              <h4 class="scale-name">تعتيم موجات الراديو (HF)</h4>
+              <p class="scale-impact">ضعف مؤقت في إشارات التردد العالي في الجانب المواجه للشمس مع استقرار GPS.</p>
+            </div>
+          </div>
+
+          <div class="solar-telemetry-row">
+            <div class="telemetry-chip">
+              <span class="label">سرعة الرياح الشمسية</span>
+              <span class="val" id="telemetry-wind">442.8 km/s</span>
+            </div>
+            <div class="telemetry-chip">
+              <span class="label">كثافة البروتونات</span>
+              <span class="val" id="telemetry-density">5.1 p/cm³</span>
+            </div>
+            <div class="telemetry-chip">
+              <span class="label">المجال المغناطيسي الكلي (Bt)</span>
+              <span class="val" id="telemetry-bt">6.4 nT</span>
+            </div>
+            <div class="telemetry-chip">
+              <span class="label">مؤشر الكوكب (Kp-Index)</span>
+              <span class="val" id="telemetry-kp">2.3 Quiet</span>
+            </div>
+          </div>
+
+          <div class="alerts-feed-strip">
+            <span>⚠️</span>
+            <div>
+              <strong>نشرة تحذيرية:</strong> تم رصد انبعاث كتلي إكليلي (CME) متوسط الشدة من البقعة الشمسية AR3842 دون تأثير على شبكات الطاقة.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [4] النظام الشمسي -->
+    <section class="section-glass-block">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">🪐</span>
+          <span>النظام الشمسي – الكواكب الثمانية واستكشاف عوالمها</span>
+        </h2>
+        <span style="font-size:0.85rem; color:var(--text-muted);">بيانات فلكية حقيقية لكتل، جاذبية، ومسافات الكواكب</span>
+      </div>
+
+      <div class="planets-grid">
+        <!-- عطارد -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/mercury.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg'" alt="كوكب عطارد" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>عطارد (Mercury)</h4>
+              <span>الكوكب الأقرب للشمس</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">عالم صخري متطرف تتقلب حرارته بين 430°م نهاراً و -180°م ليلاً لعدم وجود غلاف جوي يحبس الحرارة.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">57.9 مليون كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">3.7 m/s² (0.38G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">4,879 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">0</span></div>
+          </div>
+        </div>
+
+        <!-- الزهرة -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/venus.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg'" alt="كوكب الزهرة" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>الزهرة (Venus)</h4>
+              <span>توأم الأرض الجهنمي</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">أكثر كواكب النظام الشمسي حرارة (465°م) بسبب الاحتباس الحراري الجامح تحت غلاف سميك من ثاني أكسيد الكربون.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">108.2 مليون كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">8.87 m/s² (0.90G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">12,104 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">0</span></div>
+          </div>
+        </div>
+
+        <!-- الأرض -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/earth.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg'" alt="كوكب الأرض" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>الأرض (Earth)</h4>
+              <span>واحة الحياة الزرقاء</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">الكوكب الوحيد المعروف الذي تؤوي بيئته محيطات مائية وغلافاً جوياً غنياً بالأكسجين يحمي دروع الحياة.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">149.6 مليون كم (1 AU)</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">9.81 m/s² (1.00G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">12,742 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">1 (القمر)</span></div>
+          </div>
+        </div>
+
+        <!-- المريخ -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/mars.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'" alt="كوكب المريخ" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>المريخ (Mars)</h4>
+              <span>الكوكب الأحمر المستكشف</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">عالم صحراوي بارد بلون الصدأ، يحتوي على أضخم بركان في المجموعة الشمسية (جبل أوليمبوس) ووديان عملاقة.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">227.9 مليون كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">3.72 m/s² (0.38G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">6,779 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">2 (فوبوس وديموس)</span></div>
+          </div>
+        </div>
+
+        <!-- المشتري -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/jupiter.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg'" alt="كوكب المشتري" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>المشتري (Jupiter)</h4>
+              <span>عملاق الكواكب وحامي الأرض</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">عملاق غازي هائل يتسع لأكثر من 1,300 كوكب مثل الأرض، وتدور فيه البقعة الحمراء العظيمة منذ قرون.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">778.5 مليون كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">24.79 m/s² (2.53G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">139,820 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">95 قمراً مؤكداً</span></div>
+          </div>
+        </div>
+
+        <!-- زحل -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/saturn.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg'" alt="كوكب زحل" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>زحل (Saturn)</h4>
+              <span>جوهرة الحلقات المهيبة</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">يتألق بمنظومة حلقات بديعة متكونة من مليارات قطع الجليد والصخور، وكثافته الكلية أقل من كثافة الماء.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">1.43 مليار كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">10.44 m/s² (1.06G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">116,460 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">146 قمراً</span></div>
+          </div>
+        </div>
+
+        <!-- أورانوس -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/uranus.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg'" alt="كوكب أورانوس" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>أورانوس (Uranus)</h4>
+              <span>العملاق الجليدي المائل</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">يدور على جانبه بميلان يبلغ 98 درجة، وغلافه غني بالميثان الذي يمنحه لونه الفيروزي المميز.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">2.87 مليار كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">8.69 m/s² (0.89G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">50,724 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">28 قمراً</span></div>
+          </div>
+        </div>
+
+        <!-- نبتون -->
+        <div class="planet-card-3d">
+          <div class="planet-card-header">
+            <img src="images/planets/neptune.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg'" alt="كوكب نبتون" class="planet-visual-img">
+            <div class="planet-title-wrap">
+              <h4>نبتون (Neptune)</h4>
+              <span>حارس الأطراف وعالم الرياح الفائقة</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">أبعد الكواكب الرسمية عن الشمس، وتعصف في سمائه أعتى رياح في النظام الشمسي بسرعة تزيد عن 2,100 كم/ساعة.</p>
+          <div class="planet-stats-table">
+            <div class="planet-stat-row"><span class="k">المسافة عن الشمس:</span><span class="v">4.50 مليار كم</span></div>
+            <div class="planet-stat-row"><span class="k">الجاذبية:</span><span class="v">11.15 m/s² (1.14G)</span></div>
+            <div class="planet-stat-row"><span class="k">القطر الاستوائي:</span><span class="v">49,244 كم</span></div>
+            <div class="planet-stat-row"><span class="k">الأقمار:</span><span class="v">16 قمراً</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- أداة مقارنة الكواكب -->
+      <div class="compare-tool-container">
+        <h3 style="font-size:1.2rem; font-weight:800; color:var(--cyan-neon); margin-bottom:12px;">⚖️ أداة مقارنة الكواكب التفاعلية</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">اختر أي كوكبين لمقارنة الخصائص الفيزيائية ومخططات الجاذبية والكتلة والحجم مباشرة:</p>
+
+        <div class="compare-selectors-row">
+          <div>
+            <label style="font-size:0.8rem; color:var(--cyan-neon); font-weight:700; display:block; margin-bottom:6px;">الكوكب الأول (أزرق سماوي):</label>
+            <select id="compare-planet-1" class="select-glass-custom" onchange="runPlanetComparison()">
+              <option value="earth" selected>كوكب الأرض (Earth)</option>
+              <option value="mars">كوكب المريخ (Mars)</option>
+              <option value="jupiter">كوكب المشتري (Jupiter)</option>
+              <option value="saturn">كوكب زحل (Saturn)</option>
+              <option value="venus">كوكب الزهرة (Venus)</option>
+              <option value="mercury">كوكب عطارد (Mercury)</option>
+              <option value="uranus">كوكب أورانوس (Uranus)</option>
+              <option value="neptune">كوكب نبتون (Neptune)</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:0.8rem; color:var(--violet-neon); font-weight:700; display:block; margin-bottom:6px;">الكوكب الثاني (بنفسجي):</label>
+            <select id="compare-planet-2" class="select-glass-custom" onchange="runPlanetComparison()">
+              <option value="mars" selected>كوكب المريخ (Mars)</option>
+              <option value="earth">كوكب الأرض (Earth)</option>
+              <option value="jupiter">كوكب المشتري (Jupiter)</option>
+              <option value="saturn">كوكب زحل (Saturn)</option>
+              <option value="venus">كوكب الزهرة (Venus)</option>
+              <option value="mercury">كوكب عطارد (Mercury)</option>
+              <option value="uranus">كوكب أورانوس (Uranus)</option>
+              <option value="neptune">كوكب نبتون (Neptune)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="compare-results-matrix">
+          <div class="compare-bar-item">
+            <div class="compare-labels">
+              <span>قوة الجاذبية السطحية (m/s²):</span>
+              <span id="compare-val-grav" style="font-family:var(--font-code);">الأرض: 9.81 | المريخ: 3.72</span>
+            </div>
+            <div class="compare-track">
+              <div id="bar-grav-1" class="compare-fill-a" style="width: 72%;"></div>
+              <div id="bar-grav-2" class="compare-fill-b" style="width: 28%;"></div>
+            </div>
+          </div>
+
+          <div class="compare-bar-item">
+            <div class="compare-labels">
+              <span>القطر الاستوائي (كم):</span>
+              <span id="compare-val-diam" style="font-family:var(--font-code);">الأرض: 12,742 كم | المريخ: 6,779 كم</span>
+            </div>
+            <div class="compare-track">
+              <div id="bar-diam-1" class="compare-fill-a" style="width: 65%;"></div>
+              <div id="bar-diam-2" class="compare-fill-b" style="width: 35%;"></div>
+            </div>
+          </div>
+
+          <div class="compare-bar-item">
+            <div class="compare-labels">
+              <span>المسافة عن الشمس (مليون كم):</span>
+              <span id="compare-val-dist" style="font-family:var(--font-code);">الأرض: 149.6 | المريخ: 227.9</span>
+            </div>
+            <div class="compare-track">
+              <div id="bar-dist-1" class="compare-fill-a" style="width: 40%;"></div>
+              <div id="bar-dist-2" class="compare-fill-b" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [5] الشمس والقمر -->
+    <section class="section-glass-block">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">☀️</span>
+          <span>الشمس والقمر – نبض الحياة وجار الأرض الأقرب</span>
+        </h2>
+      </div>
+
+      <div class="celestial-split-grid">
+        <div class="sun-chamber-card">
+          <div class="celestial-
