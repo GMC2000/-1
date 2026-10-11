@@ -1,5 +1,5 @@
-<div class="school-logo-slot" style="width: auto; height: 48px; border-radius: 12px; padding: 4px 10px; background: #000;">
-  <img id="school-logo-preview" src="images/school_logo.png" alt="شعار مدارس الفرسان مكة" style="display:block; height: 100%; width: auto; object-fit: contain;">
+<div class="school-logo-slot" style="max-width: 30%; height: 46px; width: auto; border-radius: 10px; background: transparent; padding: 2px 8px; border: 1px solid rgba(0, 242, 254, 0.4); display: flex; align-items: center; justify-content: center; overflow: hidden;">
+  <img id="school-logo-preview" src="images/school_logo.png" alt="شعار مدارس الفرسان مكة" style="height: 100%; width: auto; max-width: 100%; object-fit: contain; display: block;">
 </div>
 # 🌌 بوابة أسبوع الفضاء العالمي | World Space Week Portal
 
