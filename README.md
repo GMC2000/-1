@@ -81,7 +81,7 @@
 * الطالب: **عبدالحميد طلعت**
 ---
 
-##الترخيص
+## الترخيص
 
 تم نشر هذه المنصة التعليمية بموجب [MIT رخصة](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE.ar.md) لأسبوع الفضاء العالمي 2026.
 
@@ -180,7 +180,7 @@ The portal is continuously deployed and accessible globally via GitHub Pages:
 
 ## License
 
-This educational platform is published under the [MIT License](https://www.google.com/search?q=LICENSE) for World Space Week 2026.
+This educational platform is published under the [MIT License](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE) for World Space Week 2026.
 
 ```
 
