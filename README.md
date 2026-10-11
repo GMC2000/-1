@@ -107,6 +107,17 @@ git clone [https://github.com/GMC2000/-1.git](https://github.com/GMC2000/-1.git)
 This educational platform is published under the [MIT License](https://www.google.com/search?q=LICENSE) for World Space Week 2026.
 
 ---
+<p align="center">
+  <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
+</p>
+
+<h1 align="center">بوابة أسبوع الفضاء العالمي | ثانوية الفرسان الأهلية</h1>
+<p align="center"><strong>World Space Week Interactive Web Portal (2026)</strong></p>
+
+<p align="center">
+  <a href="#arabic">العربية ↓</a> •
+  <a href="https://gmc2000.github.io/-1/">Live Demo ↗</a>
+</p>
 
 # بوابة أسبوع الفضاء العالمي — ثانوية الفرسان الأهلية
 
