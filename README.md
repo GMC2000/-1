@@ -75,17 +75,6 @@
 
 **[🌐 زيارة منصة أسبوع الفضاء العالمي](https://gmc2000.github.io/World-Space-Week-Portal/)**
 
-للتشغيل والتجربة محلياً:
-
-1. استنسخ المستودع:
-```bash
-git clone [https://github.com/GMC2000/-1.git](https://github.com/GMC2000/-1.git)
-
-```
-
-
-2. افتح ملف `index.html` في أي متصفح ويب.
-
 ---
 
 ## بطاقة المشروع والاعتماد التعليمي
@@ -171,16 +160,6 @@ The portal is continuously deployed and accessible globally via GitHub Pages:
 
 **[🌐 Visit the Live Portal](https://gmc2000.github.io/World-Space-Week-Portal/)**
 
-To run locally:
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/GMC2000/-1.git](https://github.com/GMC2000/-1.git)
-
-```
-
-
-2. Open `index.html` in any modern web browser.
 
 ---
 
