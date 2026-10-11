@@ -1,4 +1,4 @@
-فهمت عليك تماماً! أنت تقصد ملف **`README.md`**<p align="center">
+<p align="center">
   <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
 </p>
 
@@ -79,7 +79,10 @@
 * الطالب: **محمد الحازمي**
 * الطالب: **أحمد بيت المال**
 * الطالب: **عبدالحميد طلعت**
+---
 
+##الترخيص 
+تم نشر هذه المنصة التعليمية بموجب [MIT رخصة](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE.ar.md) لأسبوع الفضاء العالمي 2026.
 
 
 ---
@@ -179,5 +182,10 @@ The portal is continuously deployed and accessible globally via GitHub Pages:
 This educational platform is published under the [MIT License](https://www.google.com/search?q=LICENSE) for World Space Week 2026.
 
 ```
+
+---
+
+### الطريقة الثانية (إذا كان زر النسخ في المتصفح معطلاً):
+إذا كان زر النسخ لا يستجيب في متصفحك، أخبرني فوراً وسأقوم بإنشاء الملف لك كملف جاهز للتحميل، أو تقسيم النص إلى جزأين صغيرين يسهل تظليلهما ونسخهما بالماوس!
 
 ```
