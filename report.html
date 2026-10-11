@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التقرير الشامل لأسبوع الفضاء العالمي 2026 | بوابة الفضاء المدرسية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-space: #030612;
+      --card-bg: rgba(11, 16, 38, 0.75);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --glass-blur: blur(18px);
+      --cyan-neon: #00f2fe;
+      --cyan-glow: rgba(0, 242, 254, 0.35);
+      --purple-neon: #9d4edd;
+      --gold-royal: #f59e0b;
+      --emerald-neon: #10b981;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --font-ar: 'Cairo', 'Tajawal', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-space);
+      background-image: 
+        radial-gradient(circle at 15% 25%, rgba(157, 78, 221, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(0, 242, 254, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 55%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: var(--font-ar);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* شريط أدوات التحكم العلوي */
+    .report-action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(3, 6, 18, 0.85);
+      backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .report-brand-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .report-brand-title span.badge {
+      background: rgba(0, 242, 254, 0.15);
+      border: 1px solid var(--cyan-neon);
+      color: var(--cyan-neon);
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .report-tools-btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid var(--glass-border);
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      font-family: var(--font-ar);
+    }
+
+    .btn-action:hover {
+      background: rgba(0, 242, 254, 0.2);
+      border-color: var(--cyan-neon);
+      box-shadow: 0 0 15px var(--cyan-glow);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .btn-primary-action {
+      background: linear-gradient(135deg, #00f2fe, #4facfe);
+      color: #030612;
+      border: none;
+      box-shadow: 0 0 18px var(--cyan-glow);
+    }
+
+    .btn-primary-action:hover {
+      background: linear-gradient(135deg, #38f9d7, #4facfe);
+      color: #030612;
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+    }
+
+    /* حاوية التقرير الكاملة */
+    .report-document-sheet {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 45px 50px;
+      background: var(--card-bg);
+      backdrop-filter: var(--glass-blur);
+      border: 1.5px solid var(--glass-border);
+      border-radius: 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(0, 242, 254, 0.08);
+    }
+
+    /* ترويسة التقرير الرسمية */
+    .report-official-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 25px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+      margin-bottom: 35px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .header-entity {
+      text-align: right;
+    }
+
+    .header-entity h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .header-entity h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .header-entity span {
+      font-size: 0.85rem;
+      color: var(--cyan-neon);
+    }
+
+    .header-emblem-box {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 242, 254, 0.2), rgba(11, 16, 38, 0.9));
+      border: 2px solid var(--cyan-neon);
+      box-shadow: 0 0 25px var(--cyan-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.4rem;
+    }
+
+    .report-main-title-block {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .report-main-title-block h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      text-shadow: 0 0 25px var(--cyan-glow);
+      margin-bottom: 10px;
+    }
+
+    .report-main-title-block p {
+      font-size: 1.05rem;
+      color: var(--cyan-neon);
+      font-weight: 700;
+    }
+
+    /* بطاقات القيادة والطلاب المنفذين */
+    .report-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+
+    .meta-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      border-top: 3px solid var(--cyan-neon);
+    }
+
+    .meta-card.gold-border {
+      border-top-color: var(--gold-royal);
+    }
+
+    .meta-card.emerald-border {
+      border-top-color: var(--emerald-neon);
+    }
+
+    .meta-card.purple-border {
+      border-top-color: var(--purple-neon);
+    }
+
+    .meta-card-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .meta-card-value {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .meta-card-sub {
+      font-size: 0.8rem;
+      color: var(--cyan-neon);
+    }
+
+    /* أقسام التقرير */
+    .report-section {
+      margin-bottom: 40px;
+    }
+
+    .report-section-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .report-section-title .icon {
+      font-size: 1.4rem;
+    }
+
+    .report-p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* شبكة بطاقات الرواد في التقرير */
+    .report-astro-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 15px;
+    }
+
+    .report-astro-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .report-astro-card.saudi {
+      border-right: 4px solid var(--emerald-neon);
+    }
+
+    .report-astro-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1.5px solid var(--cyan-neon);
+      box-shadow: 0 0 12px var(--cyan-glow);
+      flex-shrink: 0;
+    }
+
+    .report-astro-info h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    .report-astro-info span {
+      font-size: 0.78rem;
+      color: var(--cyan-neon);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .report-astro-info p {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* جدول محاور المشروع المنجزة */
+    .report-table-box {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--glass-border);
+    }
+
+    .report-table-box th, .report-table-box td {
+      padding: 14px 18px;
+      text-align: right;
+    }
+
+    .report-table-box th {
+      background: rgba(0, 242, 254, 0.12);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.9rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .report-table-box td {
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.88rem;
+      color: #e2e8f0;
+    }
+
+    .report-table-box tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* منطقة التوقيع والاعتماد الرسمي */
+    .report-signatures-zone {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px dashed rgba(255, 255, 255, 0.15);
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .sig-col {
+      min-width: 220px;
+    }
+
+    .sig-col .sig-role {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .sig-col .sig-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+
+    .sig-col .sig-line {
+      width: 140px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 0 auto;
+    }
+
+
+    /* نمط الطباعة وتصدير PDF */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+      }
+      .report-action-bar {
+        display: none !important;
+      }
+      .report-document-sheet {
+        margin: 0 !important;
+        padding: 20px !important;
+        background: #ffffff !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #000000 !important;
+        max-width: 100% !important;
+      }
+      .report-official-header, .report-section-title, .report-p, .meta-card, .report-astro-card {
+        border-color: #cbd5e1 !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .header-entity h3, .report-main-title-block h1, .meta-card-value, .report-astro-info h4 {
+        color: #0f172a !important;
+        text-shadow: none !important;
+      }
+      .header-entity span, .report-main-title-block p, .meta-card-sub, .report-astro-info span {
+        color: #2563eb !important;
+      }
+      .report-table-box th {
+        background: #f1f5f9 !important;
+        color: #000000 !important;
+      }
+      .report-table-box td {
+        background: #ffffff !important;
+        color: #000000 !important;
+        border-color: #e2e8f0 !important;
+      }
+      .sig-col .sig-name, .sig-col .sig-role {
+        color: #000000 !important;
+      }
+      .sig-col .sig-line {
+        background: #000000 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .report-document-sheet {
+        padding: 25px 20px;
+        margin: 15px auto;
+      }
+      .report-main-title-block h1 {
+        font-size: 1.6rem;
+      }
+      .report-action-bar {
+        padding: 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التحكم والأدوات العائم -->
+  <header class="report-action-bar">
+    <div class="report-brand-title">
+      <span>📑 تقرير أسبوع الفضاء العالمي</span>
+      <span class="badge">نسخة رسمية كاملة</span>
+    </div>
+    <div class="report-tools-btns">
+      <button class="btn-action btn-primary-action" onclick="window.print()">
+        <span>🖨️ طباعة التقرير / حفظ PDF</span>
+      </button>
+      <button class="btn-action" onclick="toggleReportFullscreen()">
+        <span>⛶ وضع ملء الشاشة</span>
+      </button>
+      <a class="btn-action" href="index.html">
+        <span>🔙 العودة إلى المنصة الرئيسية</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ورقة التقرير الشامل الرسمية -->
+  <main class="report-document-sheet" id="report-sheet">
+    
+    <!-- الترويسة الرسمية للتعليم والمدرسة -->
+    <header class="report-official-header">
+      <div class="header-entity">
+        <h4>المملكة العربية السعودية</h4>
+        <h3>وزارة التعليم</h3>
+        <span>الإدارة العامة للتعليم بمنطقة مكة المكرمة</span>
+        <strong style="color:var(--cyan-neon); display:block; margin-top:2px;">مدارس الفرسان الأهلية بمكة المكرمة</strong>
+      </div>
+
+      <div class="header-emblem-box" style="background:#ffffff; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; box-shadow:0 0 20px rgba(0,242,254,0.4); padding:6px; overflow:hidden;">
+        <img src="images/school_logo.png" alt="شعار مدارس الفرسان مكة" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+
+      <div class="header-entity" style="text-align: left; direction: ltr;">
+        <h4>KINGDOM OF SAUDI ARABIA</h4>
+        <h3>MINISTRY OF EDUCATION</h3>
+        <span>General Department of Education - Makkah</span>
+        <strong style="color:var(--cyan-neon); display:block; margin-top:2px;">Al-Forsan Private Schools Makkah</strong>
+      </div>
+    </header>
+
+    <!-- عنوان التقرير -->
+    <div class="report-main-title-block">
+      <h1>التقرير الختامي الموثق لفعاليات أسبوع الفضاء العالمي</h1>
+      <p>بوابة الفضاء التفاعلية الحديثة (Interactive Space Portal)</p>
+    </div>
+
+    <!-- بطاقات القيادة والإشراف وفريق العمل -->
+    <div class="report-meta-grid">
+      
+      <!-- مدير المدرسة -->
+      <div class="meta-card gold-border">
+        <div class="meta-card-label">المشرف العام ومدير المدرسة</div>
+        <div class="meta-card-value">أ. محسن ردة الله الصاعدي</div>
+        <div class="meta-card-sub">رعاية الموهبة والابتكار الطلابي</div>
+      </div>
+
+      <!-- المعلم المشرف -->
+      <div class="meta-card">
+        <div class="meta-card-label">رائد النشاط والمعلم المشرف</div>
+        <div class="meta-card-value">أ. أيمن البنا</div>
+        <div class="meta-card-sub">التوجيه الأكاديمي والمتابعة التنفيذية</div>
+      </div>
+
+      <!-- الطالب المنفذ الأول -->
+      <div class="meta-card emerald-border">
+        <div class="meta-card-label">المطور والمصمم المنفذ</div>
+        <div class="meta-card-value">الطالب: محمد الحازمي</div>
+        <div class="meta-card-sub">برمجة المنصة والفيزياء التفاعلية</div>
+      </div>
+
+      <!-- الطالب المنفذ الثاني -->
+      <div class="meta-card emerald-border">
+        <div class="meta-card-label">المطور والباحث العلمي</div>
+        <div class="meta-card-value">الطالب: أحمد بيت المال</div>
+        <div class="meta-card-sub">إعداد المحتوى الكوني والتقنيات الرقمية</div>
+      </div>
+
+      <!-- الطالب المنفذ الثالث -->
+      <div class="meta-card emerald-border">
+        <div class="meta-card-label">المطور ومنسق التجارب الفلكية</div>
+        <div class="meta-card-value">الطالب: عبدالحميد طلعت</div>
+        <div class="meta-card-sub">برمجة المحاكيات واختبارات المعرفة</div>
+      </div>
+
+    </div>
+
+    <!-- ملخص المبادرة والرؤية -->
+    <section class="report-section">
+      <h2 class="report-section-title">
+        <span class="icon">🎯</span>
+        <span>الهدف العام ورؤية المبادرة التعليمية</span>
+      </h2>
+      <p class="report-p">
+        انطلاقاً من مستهدفات <strong>رؤية المملكة 2030</strong> في ترسيخ المعرفة الفضائية والعلوم والتقنية والهندسة والرياضيات (STEM)، وبتوجيه وإشراف الإدارة المدرسية المتمثلة في مدير المدرسة <strong>أ. محسن ردة الله الصاعدي</strong> ورائد النشاط <strong>أ. أيمن البنا</strong>، تم تصميم وبرمجة هذه المنصة الفضائية الشاملة بواسطة الطالبين <strong>محمد الحازمي</strong> و<strong>أحمد بيت المال</strong>، لتكون مركزاً تعليمياً وتفاعلياً رائداً يربط الطلاب بآفاق الفضاء وعجائب الكون.
+      </p>
+    </section>
+
+    <!-- محاور المنصة والفعالية المنجزة -->
+    <section class="report-section">
+      <h2 class="report-section-title">
+        <span class="icon">📊</span>
+        <span>المحاور العلمية والتقنية المنجزة بالمنصة</span>
+      </h2>
+      
+      <table class="report-table-box">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>المحور العلمي</th>
+            <th>التقنية والأداة المستخدمة</th>
+            <th>الأثر والمخرجات التعليمية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>رادار الطقس الفضائي الحي</td>
+            <td>Canvas تفاعلي ورصد مستويات G/S/R</td>
+            <td>فهم الرياح الشمسية والعواصف المغناطيسية وتأثيرها على الأقمار والاتصالات.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>موسوعة النظام الشمسي</td>
+            <td>بطاقات ثلاثية الأبعاد + صور علمية</td>
+            <td>استكشاف الكواكب الثمانية، حساب الكتل والجاذبية وأقطار الأجرام.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>تجارب PhET الفيزيائية</td>
+            <td>محاكاة HTML5 من جامعة كولورادو</td>
+            <td>تطبيق قوانين الجاذبية لنيوتن، المدارات، إطلاق المقذوفات، والمقلاع الجاذبي.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>قطاع الفضاء والاتصالات السعودي</td>
+            <td>توثيق CST و SSA + صور طاقم Ax-2 وشعارات رسمية</td>
+            <td>إبراز ريادة المملكة، مبادرة Space SandBox التنظيمية، وتجارب الرواد السعوديين الـ 14 بمحطة ISS.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>سجل رواد الفضاء العرب والعالميين</td>
+            <td>معرض رقمي وصور رسمية موثقة</td>
+            <td>التعريف بإنجازات المملكة والعالم وإلهام الأجيال بالقدوات الفضائية.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>جناح وكالة ناسا الفضائية (NASA Hub)</td>
+            <td>محاكيات NASA Eyes 3D + صور JWST + طقس المريخ</td>
+            <td>معايشة حية لمسارات المركبات الفضائية، طقس فوهة جيزيرو، ورصد تلسكوب جيمس ويب للكون السحيق.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>محطة الفضاء الدولية (ISS)</td>
+            <td>محاكي مداري بالزمن الحقيقي</td>
+            <td>تتبع مدار المحطة وسرعتها الفائقة (27,600 كم/س) وتجارب بيئة انعدام الوزن.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>التحدي والشهادة الرقمية المعتمدة</td>
+            <td>اختبار معرفي + شهادة رقمية فورية معتمدة</td>
+            <td>قياس التحصيل العلمي وإصدار شهادة رائد فضاء فخرية لكافة الطلاب المجتازين.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- توثيق قطاع الفضاء والاتصالات السعودي -->
+    <section class="report-section">
+      <h2 class="report-section-title">
+        <span class="icon">🇸🇦</span>
+        <span>توثيق قطاع الفضاء والاتصالات السعودي (CST & SSA)</span>
+      </h2>
+      <p class="report-p">
+        أبرزت المنصة الدور الريادي للمملكة العربية السعودية وفق رؤية 2030 في قيادة قطاع الفضاء وتمكين الاتصالات المدارية عبر ركيزتين وطنيتين:
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 16px 0;">
+        <div style="background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.3); border-radius: 12px; padding: 18px;">
+          <h4 style="color: #10b981; margin-bottom: 6px; font-size: 1rem;">هيئة الاتصالات والفضاء والتقنية (CST)</h4>
+          <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.6; margin: 0;">
+            الجهة التنظيمية لقطاع الفضاء الوطني؛ أطلقت أول بيئة تنظيمية تجريبية للفضاء (Space SandBox) بالمنطقة، وتنظيم الشبكات غير الأرضية (NTN) وإدارة الموارد الترددية والأقمار الصناعية.
+          </p>
+        </div>
+
+        <div style="background: rgba(0,242,254,0.08); border: 1px solid rgba(0,242,254,0.3); border-radius: 12px; padding: 18px;">
+          <h4 style="color: #00f2fe; margin-bottom: 6px; font-size: 1rem;">وكالة الفضاء السعودية (SSA)</h4>
+          <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.6; margin: 0;">
+            القيادة التنفيذية للاستراتيجية الوطنية للفضاء؛ قادت برنامج رواد الفضاء ومهمة Ax-2 بمحطة ISS، وتوقيع اتفاقيات أرتميس مع NASA، وإطلاق منظومة الأقمار الصناعية الوطنية (+17 قمراً).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- توثيق رواد الفضاء في التقرير -->
+    <section class="report-section">
+      <h2 class="report-section-title">
+        <span class="icon">👨‍🚀</span>
+        <span>توثيق رواد الفضاء العرب والعالميين المشمولين بالمنصة</span>
+      </h2>
+      <p class="report-p">
+        تم استعراض السير التاريخية والعلمية لـ 6 من أبرز رواد الفضاء الذين غيروا تاريخ البشرية وصنعوا المجد الفضائي:
+      </p>
+
+      <div class="report-astro-grid">
+        
+        <!-- سلطان بن سلمان -->
+        <div class="report-astro-card saudi">
+          <img class="report-astro-img" src="images/astronauts/sultan_salman.jpg" alt="الأمير سلطان بن سلمان" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/f/fd/HRH_Prince_Sultan_bin_Salman_bin_Abdulaziz_Al-Saud%2C_the_Chairman_%26_President_of_the_Saudi_Commission_for_Tourism_and_National_Heritage_%2826006959140%29.jpg';">
+          <div class="report-astro-info">
+            <h4>الأمير سلطان بن سلمان</h4>
+            <span>أول رائد فضاء عربي ومسلم (1985)</span>
+            <p>مكوك ديسكفري STS-51-G، إطلاق عرب سات-1B وتجارب طبية وضعت العرب على خارطة الفضاء.</p>
+          </div>
+        </div>
+
+        <!-- ريانة برناوي -->
+        <div class="report-astro-card saudi">
+          <img class="report-astro-img" src="images/astronauts/rayyanah_barnawi.jpg" alt="ريانة برناوي" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Rayyanah_Barnawi_%28cropped%29.jpg';">
+          <div class="report-astro-info">
+            <h4>ريانة برناوي</h4>
+            <span>أول رائدة فضاء سعودية وعربية (2023)</span>
+            <p>مهمة Ax-2 إلى محطة الفضاء الدولية، إنجاز أبحاث الخلايا الجذعية والاستمطار في الجاذبية الصغرى.</p>
+          </div>
+        </div>
+
+        <!-- علي القرني -->
+        <div class="report-astro-card saudi">
+          <img class="report-astro-img" src="images/astronauts/ali_alqarni.jpg" alt="علي القرني" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/7/77/Ali_AlQarni_%28cropped%29.jpg';">
+          <div class="report-astro-info">
+            <h4>علي القرني</h4>
+            <span>رائد فضاء سعودي وطيار مقاتل (2023)</span>
+            <p>مهمة Ax-2، إجراء 14 تجربة بحثية واتصالات تفاعلية مباشرة مع الطلاب لإلهام جيل المستقبل.</p>
+          </div>
+        </div>
+
+        <!-- سلطان النيادي -->
+        <div class="report-astro-card saudi">
+          <img class="report-astro-img" src="images/astronauts/sultan_neyadi.jpg" alt="د. سلطان النيادي" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/f/f9/SpaceX-Crew-6_Sultan-Alneyadi-MBRSC-scaled.jpg';">
+          <div class="report-astro-info">
+            <h4>د. سلطان النيادي</h4>
+            <span>صاحب أطول مهمة فضائية عربية (2023)</span>
+            <p>طاقم Crew-6 (186 يوماً)، أول عربي ينجز مهمة سير في الفضاء المفتوح (Spacewalk) لمدة 7 ساعات.</p>
+          </div>
+        </div>
+
+        <!-- يوري جاجارين -->
+        <div class="report-astro-card">
+          <img class="report-astro-img" src="images/astronauts/yuri_gagarin.jpg" alt="يوري جاجارين" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/e/e5/Yuri_Gagarin_%281961%29_-_Restoration.jpg';">
+          <div class="report-astro-info">
+            <h4>يوري جاجارين</h4>
+            <span>أول إنسان يعبر إلى الفضاء (1961)</span>
+            <p>مركبة فوستوك-1، دار دورة كاملة حول الأرض في 108 دقائق كاسراً الحاجز الكوكبي.</p>
+          </div>
+        </div>
+
+        <!-- نيل أرمسترونج -->
+        <div class="report-astro-card">
+          <img class="report-astro-img" src="images/astronauts/neil_armstrong.jpg" alt="نيل أرمسترونج" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/0/0d/Neil_Armstrong_pose.jpg';">
+          <div class="report-astro-info">
+            <h4>نيل أرمسترونج</h4>
+            <span>أول إنسان يطأ سطح القمر (1969)</span>
+            <p>رحلة أبولو 11، "وثبة عملاقة للبشرية"، مسجلاً أول أثر بشري تاريخي على سطح القمر.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- توثيق جناح وكالة ناسا والاستكشاف السحيق -->
+    <section class="report-section">
+      <h2 class="report-section-title">
+        <span class="icon">🪐</span>
+        <span>توثيق جناح وكالة ناسا الفضائية ومهمات الفضاء السحيق</span>
+      </h2>
+      <p class="report-p">
+        تم ربط المنصة بمصادر وبيانات وكالة الفضاء الأمريكية (NASA) لتزويد الطلاب بتجربة علمية حية تحاكي أحدث الاكتشافات الكونية:
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px;">
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 18px;">
+          <h4 style="color: #00f2fe; margin-bottom: 6px; font-size: 1rem;">محاكي NASA Eyes 3D الحي</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.6; margin: 0;">
+            إدماج نماذج محاكاة ثلاثية الأبعاد تفاعلية تغطي مسارات الكواكب الحقيقية، مناخ كوكب الأرض، ومسارات الكويكبات بالزمن الفعلي.
+          </p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 18px;">
+          <h4 style="color: #9d4edd; margin-bottom: 6px; font-size: 1rem;">مرصدا جيمس ويب وهابل</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.6; margin: 0;">
+            مقارنة تقنية لاختراق الأشعة تحت الحمراء لسحب الغبار الكوني في سديم "أعمدة الخلق" وعرض حقل المجرات السحيق الأول SMACS 0723.
+          </p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 18px;">
+          <h4 style="color: #ff6b6b; margin-bottom: 6px; font-size: 1rem;">مهمة المريخ 2020 وبيرسيفيرانس</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.6; margin: 0;">
+            عرض طقس فوهة جيزيرو الحقيقي (درجات الحرارة، الضغط، الرياح)، وجهاز MOXIE لإنتاج الأكسجين، ورحلات المروحية Ingenuity.
+          </p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 18px;">
+          <h4 style="color: #10b981; margin-bottom: 6px; font-size: 1rem;">برنامج أرتميس (Moon to Mars)</h4>
+          <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.6; margin: 0;">
+            استعراض مسار كبسولة أوريون وصاروخ SLS، وخارطة طريق العودة البشرية المستدامة إلى القطب الجنوبي للقمر.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- النتائج والتوصيات -->
+    <section class="report-section">
+      <h2 class="report-section-title">
+        <span class="icon">✨</span>
+        <span>أبرز النتائج والتوصيات</span>
+      </h2>
+      <ul style="padding-right: 25px; color: #cbd5e1; font-size: 0.95rem; line-height: 1.8;">
+        <li>حقق المشروع تفاعلاً طلابياً استثنائياً عبر دمج الفيزياء النظرية بمحاكيات PhET التفاعلية.</li>
+        <li>تعزيز روح الفخر الوطني بالرحلات والمهمات العلمية الفضائية للمملكة العربية السعودية.</li>
+        <li>التوصية باعتماد المنصة كمرجع دائم للأنشطة العلمية ومجال الفلك والفيزياء في المدرسة.</li>
+      </ul>
+    </section>
+
+    <!-- منطقة الاعتماد والتوقيعات الرسمية -->
+    <footer class="report-signatures-zone">
+      <div class="sig-col">
+        <div class="sig-role">المطورون والمنفذون</div>
+        <div class="sig-name">محمد الحازمي & أحمد بيت المال & عبدالحميد طلعت</div>
+        <div class="sig-line"></div>
+      </div>
+
+      <div class="sig-col">
+        <div class="sig-role">رائد النشاط والمعلم المشرف</div>
+        <div class="sig-name">أ. أيمن البنا</div>
+        <div class="sig-line"></div>
+      </div>
+
+      <div class="sig-col">
+        <div class="sig-role">مدير المدرسة والمشرف العام</div>
+        <div class="sig-name">أ. محسن ردة الله الصاعدي</div>
+        <div class="sig-line"></div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    function toggleReportFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+  </script>
+</body>
+</html>
