@@ -71,15 +71,13 @@
 
 ## بطاقة المشروع والاعتماد التعليمي
 
-* **المدرسة:** ثانوية الفرسان الأهلية بمكة المكرمة
-* **المشرف العام ومدير المدرسة:** أ. محسن ردة الله الصاعدي
-* **المعلم المشرف ورائد النشاط:** أ. أيمن البنا
-* **فريق العمل والتنفيذ الطلابي:**
-* الطالب: **محمد الحازمي**
-* الطالب: **أحمد بيت المال**
-* الطالب: **عبدالحميد طلعت**
-
-
+- **المدرسة:** ثانوية الفرسان الأهلية بمكة المكرمة
+- **المشرف العام ومدير المدرسة:** أ. محسن ردة الله الصاعدي
+- **المعلم المشرف:** أ. أيمن البنا
+- **فريق العمل والتنفيذ الطلابي:**
+  - الطالب: **محمد الحازمي**
+  - الطالب: **أحمد بيت المال**
+  - الطالب: **عبدالحميد طلعت**
 
 ---
 
@@ -169,15 +167,13 @@ The platform is hosted and deployed entirely via GitHub Pages and can be accesse
 
 ## Project Credits & Educational Accreditation
 
-* **School:** Al-Fursan Private High School, Makkah
-* **General Supervisor & School Principal:** Mr. Mohsen Raddatullah Al-Saeedi
-* **Supervising Teacher & Activity Leader:** Mr. Ayman Al-Banna
-* **Student Development & Execution Team:**
-* Student: **Mohammed Al-Hazmi**
-* Student: **Ahmed Beit El-Mal**
-* Student: **Abdulhamid Talaat**
-
-
+- **School:** Al-Fursan Private High School, Makkah
+- **General Supervisor & School Principal:** Mr. Mohsen Raddatullah Al-Saeedi
+- **Supervising Teacher:** Mr. Ayman Al-Banna
+- **Student Development & Execution Team:**
+  - Student: **Mohammed Al-Hazmi**
+  - Student: **Ahmed Beit El-Mal**
+  - Student: **Abdulhamid Talaat**
 
 ---
 
