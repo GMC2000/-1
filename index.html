@@ -2179,4 +2179,682 @@
 
       <div class="celestial-split-grid">
         <div class="sun-chamber-card">
-          <div class="celestial-
+          <div class="celestial-badge badge-sun">✦ قلب النظام الشمسي ونجمنا الأم</div>
+          <h3 style="font-size:1.6rem; font-weight:800; color:#ffffff; margin-bottom:12px;">الشمس ومحرك الاندماج النووي</h3>
+          <p style="font-size:0.9rem; color:var(--text-main); line-height:1.7; margin-bottom:16px;">
+            مفاعل اندماج نووي عملاق يُحول 600 مليون طن من الهيدروجين إلى هيليوم كل ثانية، مولداً طاقة تمد كوكبنا بالدفء والنور.
+          </p>
+          <ul style="padding-right:20px; font-size:0.87rem; color:var(--text-muted); line-height:1.8;">
+            <li><strong>طبقات الشمس:</strong> القلب (15 مليون مئوية)، منطقة الإشعاع، منطقة الحمل، والفوتوسفير.</li>
+            <li><strong>الانبعاثات الكتلية الإكليلية (CME):</strong> بلازما ممغنطة مقذوفة في الفضاء مسببة الشفق القطبي.</li>
+          </ul>
+        </div>
+
+        <div class="moon-chamber-card">
+          <div class="celestial-badge badge-moon">✦ الرفيق المداري وبوابة العوالم</div>
+          <h3 style="font-size:1.6rem; font-weight:800; color:#ffffff; margin-bottom:12px;">القمر وأطواره ومحطة أرتميس</h3>
+          <p style="font-size:0.9rem; color:var(--text-main); line-height:1.7; margin-bottom:16px;">
+            جرمنا الأقرب المقيد مدارياً بالأرض، يسبب ظاهرتي المد والجزر ويشكل منصة انطلاق البشرية القادمة نحو المريخ.
+          </p>
+          
+          <div style="font-size:0.88rem; font-weight:700; color:#ffffff; margin-bottom:6px;">🌙 استعراض أطوار القمر التفاعلي:</div>
+          <div class="interactive-moon-phase-selector">
+            <button class="moon-phase-btn active" onclick="setMoonPhase('محاق (New Moon)', 'القمر يقع بين الأرض والشمس، وجهه المضاء بعيد عنا تماماً.', this)">المحاق</button>
+            <button class="moon-phase-btn" onclick="setMoonPhase('هلال متزايد (Waxing Crescent)', 'ظهور قوس فضي رفيع من الضوء في الأفق الغربي بعد الغروب.', this)">الهلال</button>
+            <button class="moon-phase-btn" onclick="setMoonPhase('تربيع أول (First Quarter)', 'نصف الوجه المقابل للأرض مضاء تماماً بزاوية 90 درجة مع الشمس.', this)">التربيع الأول</button>
+            <button class="moon-phase-btn" onclick="setMoonPhase('بدر كامل (Full Moon)', 'الأرض بين الشمس والقمر؛ يسطع الوجه القمري بالكامل بضياء أبيض ساحر.', this)">البدر الكامل</button>
+          </div>
+          <div id="moon-phase-desc-box" style="margin-top:12px; font-size:0.85rem; color:var(--cyan-neon); background:rgba(255,255,255,0.03); padding:10px 14px; border-radius:8px;">
+            <strong>محاق (New Moon):</strong> القمر يقع بين الأرض والشمس، وجهه المضاء بعيد عنا تماماً.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [6] الفضاء السعودي -->
+    <section class="section-glass-block" id="saudi-space-section">
+      <div class="saudi-space-banner">
+        <div>
+          <div style="font-size:0.8rem; font-weight:800; color:var(--emerald-neon); letter-spacing:1px; margin-bottom:4px;">
+            🇸🇦 رؤية السعودية 2030 | برنامج تطوير قطاع الفضاء الوطني
+          </div>
+          <h2 style="font-size:1.6rem; font-weight:900; color:#ffffff; margin:0 0 6px;">
+            المملكة نحو الفضاء – قطاع الفضاء والاتصالات السعودي
+          </h2>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin:0; max-width:650px;">
+            منظومة تكاملية رائدة بقيادة وكالة الفضاء السعودية (SSA) وهيئة الاتصالات والفضاء والتقنية (CST) لتمكين اقتصاد الفضاء.
+          </p>
+        </div>
+
+        <div class="saudi-agencies-logos">
+          <a href="https://www.cst.gov.sa/" target="_blank" rel="noopener" class="saudi-logo-card" title="هيئة الاتصالات والفضاء والتقنية (CST)">
+            <img src="images/saudi_space/cst_logo.svg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg'" alt="هيئة الاتصالات والفضاء والتقنية CST">
+          </a>
+          <a href="https://saudi-space.gov.sa/" target="_blank" rel="noopener" class="saudi-logo-card" title="وكالة الفضاء السعودية (SSA)">
+            <img src="images/saudi_space/ssa_logo.svg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'" alt="وكالة الفضاء السعودية SSA">
+          </a>
+        </div>
+      </div>
+
+      <div class="saudi-metrics-deck">
+        <div class="saudi-metric-pill">
+          <span class="num">1985</span>
+          <span class="label">أول رائد فضاء عربي ومسلم (الأمير سلطان بن سلمان)</span>
+        </div>
+        <div class="saudi-metric-pill">
+          <span class="num">2023</span>
+          <span class="label">أول رائدة فضاء عربية مسلمة (ريانة برناوي - Ax-2)</span>
+        </div>
+        <div class="saudi-metric-pill">
+          <span class="num">+17</span>
+          <span class="label">قمراً صناعياً أُطلق إلى المدار الفضائي</span>
+        </div>
+        <div class="saudi-metric-pill">
+          <span class="num">14</span>
+          <span class="label">تجربة بحثية متقدمة في الجاذبية الصغرى</span>
+        </div>
+      </div>
+
+      <div class="saudi-pillar-grid">
+        <div class="saudi-pillar-card">
+          <div class="saudi-pillar-badge badge-cst">
+            <span>📡 الهيئة التنظيمية الوطنية لقطاع الفضاء</span>
+          </div>
+          <h3 style="font-size:1.3rem; font-weight:800; color:#ffffff; margin-bottom:12px;">
+            هيئة الاتصالات والفضاء والتقنية (CST)
+          </h3>
+          <p style="font-size:0.88rem; color:var(--text-main); line-height:1.7; margin-bottom:16px;">
+            الجهة المسؤولة عن تنظيم قطاع الفضاء في المملكة، وتمكين بيئة استثمارية محفزة للشبكات غير الأرضية (NTN) وحماية الترددات الفضائية.
+          </p>
+          <a href="https://www.cst.gov.sa/" target="_blank" rel="noopener" class="nav-btn-icon nav-btn-primary" style="display:inline-flex; text-decoration:none;">
+            <span>زيارة بوابة CST الرسمية ↗</span>
+          </a>
+        </div>
+
+        <div class="saudi-pillar-card">
+          <div class="saudi-pillar-badge badge-ssa">
+            <span>🚀 القيادة التنفيذية والمهمات والبرامج العلمية</span>
+          </div>
+          <h3 style="font-size:1.3rem; font-weight:800; color:#ffffff; margin-bottom:12px;">
+            وكالة الفضاء السعودية (SSA)
+          </h3>
+          <p style="font-size:0.88rem; color:var(--text-main); line-height:1.7; margin-bottom:16px;">
+            الجهة الوطنية التي ترسم السياسات المستقبلية لصناعة الفضاء، قيادة المهمات الاستكشافية، وتطوير الكفاءات في علوم وتكنولوجيا الفضاء.
+          </p>
+          <a href="https://saudi-space.gov.sa/" target="_blank" rel="noopener" class="nav-btn-icon nav-btn-accent" style="display:inline-flex; text-decoration:none;">
+            <span>زيارة بوابة وكالة الفضاء SSA ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- [7] رواد الفضاء -->
+    <section class="section-glass-block">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">👨‍🚀</span>
+          <span>رواد الفضاء العرب والعالميون – بصمة المجد بين النجوم</span>
+        </h2>
+        <button class="nav-btn-icon nav-btn-primary" onclick="openReportModal()">
+          <span>📄 عرض التقرير في صفحة كاملة 📑</span>
+        </button>
+      </div>
+
+      <div class="astronauts-deck">
+        <div class="astro-card-elite arab-flagged">
+          <div class="astro-head-row">
+            <img class="astro-avatar-img" src="images/astronauts/sultan_salman.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/f/fd/HRH_Prince_Sultan_bin_Salman_bin_Abdulaziz_Al-Saud%2C_the_Chairman_%26_President_of_the_Saudi_Commission_for_Tourism_and_National_Heritage_%2826006959140%29.jpg'" alt="الأمير سلطان بن سلمان">
+            <div class="astro-names">
+              <h4>الأمير سلطان بن سلمان</h4>
+              <span>أول رائد فضاء عربي ومسلم</span>
+            </div>
+          </div>
+          <span class="astro-mission-badge">مكوك ديسكفري STS-51-G (1985)</span>
+          <p class="astro-bio">شارك في إطلاق القمر الصناعي العربي (عرب سات-1B) ونفذ تجارب فيزيائية رائدة وضعت العرب على خارطة رحلات الفضاء المأهولة.</p>
+        </div>
+
+        <div class="astro-card-elite arab-flagged">
+          <div class="astro-head-row">
+            <img class="astro-avatar-img" src="images/astronauts/rayyanah_barnawi.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Rayyanah_Barnawi_%28cropped%29.jpg'" alt="ريانة برناوي">
+            <div class="astro-names">
+              <h4>ريانة برناوي</h4>
+              <span>أول رائدة فضاء سعودية وعربية</span>
+            </div>
+          </div>
+          <span class="astro-mission-badge">مهمة Ax-2 الدولية (2023)</span>
+          <p class="astro-bio">أخصائية أبحاث الخلايا الجذعية، صعدت لمحطة الفضاء الدولية ونفذت تجارب خلوية دقيقة ومحاكاة الاستمطار الصناعي في الجاذبية الصغرى.</p>
+        </div>
+
+        <div class="astro-card-elite arab-flagged">
+          <div class="astro-head-row">
+            <img class="astro-avatar-img" src="images/astronauts/ali_alqarni.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/7/77/Ali_AlQarni_%28cropped%29.jpg'" alt="علي القرني">
+            <div class="astro-names">
+              <h4>علي القرني</h4>
+              <span>رائد فضاء سعودي وطيار مقاتل</span>
+            </div>
+          </div>
+          <span class="astro-mission-badge">مهمة Ax-2 الدولية (2023)</span>
+          <p class="astro-bio">طيار مقاتل حلق إلى محطة الفضاء الدولية وأجرى 14 تجربة علمية وتعليمية مع الطلاب السعوديين عبر اتصال مباشر من الفضاء.</p>
+        </div>
+
+        <div class="astro-card-elite arab-flagged">
+          <div class="astro-head-row">
+            <img class="astro-avatar-img" src="images/astronauts/sultan_neyadi.jpg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/f/f9/SpaceX-Crew-6_Sultan-Alneyadi-MBRSC-scaled.jpg'" alt="د. سلطان النيادي">
+            <div class="astro-names">
+              <h4>د. سلطان النيادي</h4>
+              <span>صاحب أطول مهمة فضائية عربية</span>
+            </div>
+          </div>
+          <span class="astro-mission-badge">طاقم Crew-6 (6 أشهر - 2023)</span>
+          <p class="astro-bio">رائد الفضاء الإماراتي، أول عربي يخوض مهمة سير في الفضاء المفتوح خارج محطة الفضاء الدولية لمدة 7 ساعات.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- [8] جناح ناسا -->
+    <section class="section-glass-block" id="nasa-hub">
+      <div class="nasa-header-banner">
+        <div class="nasa-brand-wrap">
+          <img src="images/nasa/nasa_logo.svg" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg'" alt="شعار وكالة ناسا" class="nasa-logo-img">
+          <div>
+            <div style="font-size:0.78rem; font-weight:800; color:var(--cyan-neon);">NATIONAL AERONAUTICS AND SPACE ADMINISTRATION</div>
+            <h2 style="font-size:1.5rem; font-weight:900; color:#ffffff; margin:2px 0 4px;">جناح وكالة الفضاء الأمريكية (NASA) التفاعلي</h2>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin:0;">بوابة حية مباشرة لأحدث برامج ناسا الاستكشافية والمحاكيات ثلاثية الأبعاد.</p>
+          </div>
+        </div>
+
+        <div class="nasa-stats-pillbox">
+          <div class="nasa-stat-pill">
+            <span>🚀 مهمات نشطة:</span>
+            <strong>+80 مهمة</strong>
+          </div>
+          <div class="nasa-stat-pill">
+            <span>🪐 كواكب مكتشفة:</span>
+            <strong>+5,600 كوكب</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="nasa-eyes-card">
+        <div class="nasa-eyes-bar">
+          <div>
+            <h3 style="font-size:1.15rem; font-weight:800; color:#fff; margin:0 0 4px;">محاكي ناسا ثلاثي الأبعاد التفاعلي الحي (NASA Eyes on the Solar System)</h3>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin:0;">استكشف الكواكب والمركبات الفضائية في الوقت الفعلي بدقة مدارية حقيقية.</p>
+          </div>
+          <button class="nav-btn-icon" onclick="toggleNasaEyesFullscreen()">
+            <span>⛶ شاشة كاملة</span>
+          </button>
+        </div>
+
+        <div class="nasa-eyes-viewport" id="nasa-eyes-viewport-box">
+          <iframe id="nasa-eyes-iframe" src="https://eyes.nasa.gov/apps/solar-system/" allowfullscreen loading="lazy" title="NASA Eyes"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- [9] تجارب PhET الفيزيائية -->
+    <section class="section-glass-block" id="simulators-lab">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">🔬</span>
+          <span>مختبر المحاكاة والتجارب الفيزيائية التفاعلية (PhET Space Lab)</span>
+        </h2>
+      </div>
+
+      <div class="simulators-tab-nav">
+        <button class="sim-tab-btn active" onclick="switchSimTab('phet-gravity-orbits-tab', this)">
+          <span>🌍 الجاذبية والمدارات الفضائية (PhET)</span>
+        </button>
+        <button class="sim-tab-btn" onclick="switchSimTab('weight-tab', this)">
+          <span>🪐 حاسبة وزنك على الكواكب</span>
+        </button>
+      </div>
+
+      <div id="phet-gravity-orbits-tab" class="sim-tab-content-panel active">
+        <div class="phet-sim-container">
+          <div class="phet-top-bar">
+            <div class="phet-badge-brand">
+              <span>⚡ تجربة معتمدة: الجاذبية وحركة المدارات الفضائية | University of Colorado Boulder</span>
+            </div>
+            <div class="phet-actions">
+              <button class="phet-action-btn" onclick="togglePhETFullscreen('iframe-phet-gravity')">⛶ وضع ملء الشاشة</button>
+              <button class="phet-action-btn" onclick="reloadPhETSim('iframe-phet-gravity')">🔄 إعادة ضبط التجربة</button>
+            </div>
+          </div>
+
+          <div class="phet-frame-wrapper">
+            <iframe id="iframe-phet-gravity" src="https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits_all.html" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="weight-tab" class="sim-tab-content-panel">
+        <div class="weight-calc-wrap">
+          <div>
+            <h4 style="color:#ffffff; margin-bottom:6px;">اكتشف وزنك على باقي كواكب المجموعة الشمسية</h4>
+            <p style="font-size:0.88rem; color:var(--text-muted);">الكتلة ثابتة والوزن يتغير حسب جاذبية كل جرم:</p>
+          </div>
+
+          <div class="weight-input-group">
+            <input type="number" id="user-earth-weight" class="input-glass-num" value="70" min="5" max="300" oninput="calculatePlanetaryWeights()">
+            <span style="font-size:1.1rem; color:var(--cyan-neon); font-weight:700;">كجم على الأرض</span>
+          </div>
+
+          <div class="weight-results-grid" id="weight-results-cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [10] مسابقة الفضاء والشهادة الرقمية -->
+    <section class="section-glass-block">
+      <div class="section-title-wrap">
+        <h2 class="section-heading-primary">
+          <span class="icon">🏆</span>
+          <span>تحدي أسبوع الفضاء – اختبر معلوماتك واحصل على شهادتك الرقمية</span>
+        </h2>
+      </div>
+
+      <div class="quiz-container-box">
+        <div id="quiz-question-screen">
+          <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:var(--cyan-neon); margin-bottom:12px;">
+            <span id="quiz-progress-text">السؤال 1 من 4</span>
+            <span id="quiz-score-text">النقاط: 0</span>
+          </div>
+
+          <h3 class="quiz-question-title" id="quiz-question-label">ما هي السرعة المطلوبة للإفلات التام من جاذبية كوكب الأرض؟</h3>
+          <div class="quiz-options-list" id="quiz-options-container"></div>
+        </div>
+
+        <div id="quiz-name-step" style="display:none; text-align:center; padding: 30px 15px; animation: fadeInSim 0.4s ease;">
+          <div style="font-size:3.2rem; margin-bottom:12px;">🎉👨‍🚀</div>
+          <h3 style="font-size:1.65rem; font-weight:800; color:#ffffff; margin-bottom:8px;">تهانينا على إكمال التحدي الفضائي بنجاح!</h3>
+          <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:24px;">أدخل اسمك لاعتماده فوراً على شهادتك الرقمية الفخرية:</p>
+
+          <div style="max-width:440px; margin:0 auto 20px;">
+            <input type="text" id="custom-cert-name-input" class="select-glass-custom" placeholder="اكتب اسمك الكريم هنا..." style="width:100%; text-align:center; font-size:1.15rem; font-weight:700; border-color:var(--cyan-neon);" value="محمد الباحث الفضائي" onkeydown="if(event.key==='Enter') generateDigitalCertificate()">
+          </div>
+
+          <button class="nav-btn-icon nav-btn-accent" style="padding:12px 34px; font-size:1rem;" onclick="generateDigitalCertificate()">
+            <span>إصدار واعتماد الشهادة الفضائية 🎓</span>
+          </button>
+        </div>
+
+        <div id="certificate-zone">
+          <div class="certificate-frame" id="printable-cert">
+            <div class="cert-heading-top">المملكة العربية السعودية | وزارة التعليم</div>
+            <div class="cert-heading-top" style="color:var(--cyan-neon);">ثانوية الفرسان الأهلية بمكة المكرمة — بوابة أسبوع الفضاء العالمي</div>
+            <h2 class="cert-main-title">شهادة رائد فضاء المستقبل الفخرية</h2>
+            <p style="font-size:1rem; color:var(--text-main);">يشهد فريق بوابة أسبوع الفضاء العالمي بأن الباحث المبدع:</p>
+            
+            <div class="cert-holder-name" id="cert-user-name">محمد الباحث الفضائي</div>
+
+            <p style="font-size:0.95rem; color:var(--text-muted); max-width:600px; margin:0 auto;">
+              قد اجتاز بنجاح واقتدار التحدي المعرفي الفضائي، وأظهر شغفاً علمياً استثنائياً في فهم علوم الفلك والفيزياء المدارية وتطبيقات الذكاء الاصطناعي.
+            </p>
+
+            <div class="cert-signatures">
+              <div>
+                <strong>مدير المدرسة والمشرف العام:</strong><br>
+                أ. محسن ردة الله الصاعدي
+              </div>
+              <div>
+                <strong>المعلم المشرف:</strong><br>
+                أ. أيمن البنا
+              </div>
+              <div>
+                <strong>إعداد وتنفيذ:</strong><br>
+                محمد الحازمي & أحمد بيت المال
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:25px; display:flex; justify-content:center; gap:15px;">
+            <button class="nav-btn-icon nav-btn-accent" onclick="window.print()">
+              <span>طباعة الشهادة الرسمية 🖨️</span>
+            </button>
+            <button class="nav-btn-icon" onclick="restartQuiz()">
+              <span>إعادة الاختبار 🔄</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- نافذة التقرير -->
+  <div class="modal-curtain" id="report-modal" onclick="handleCurtainClick(event, 'report-modal')">
+    <div class="modal-glass-dialog" style="max-width: 95vw; width: 1240px; height: 92vh; padding: 18px 22px; display: flex; flex-direction: column;">
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:14px; border-bottom:1px solid var(--glass-border); margin-bottom:14px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span style="font-size:1.6rem;">📑</span>
+          <h3 style="font-size:1.15rem; color:#fff; font-weight:800; margin:0;">التقرير الشامل لأسبوع الفضاء العالمي</h3>
+        </div>
+        <button class="modal-x-btn" onclick="closeReportModal()" style="position:static;">✕</button>
+      </div>
+
+      <div style="flex:1; width:100%; border-radius:14px; overflow:hidden; background:#030612;">
+        <iframe id="report-fullscreen-iframe" src="report.html" style="width:100%; height:100%; border:none; display:block;"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- تذييل المنصة -->
+  <footer class="main-footer-glass">
+    <div class="platform-container" style="padding-top:0; padding-bottom:0;">
+      <div class="footer-content-wrap">
+        <div class="footer-col">
+          <h3>بوابة أسبوع الفضاء العالمي</h3>
+          <p>ثانوية الفرسان الأهلية بمكة المكرمة | دمج تقنيات الويب والفيزياء الفلكية والذكاء الاصطناعي.</p>
+        </div>
+
+        <div class="footer-credits-list">
+          <div>مدير المدرسة والمشرف العام: <strong>أ. محسن ردة الله الصاعدي</strong></div>
+          <div>رائد النشاط والمعلم المشرف: <strong>أ. أيمن البنا</strong></div>
+          <div>تنفيذ الطلاب: <strong>محمد الحازمي & أحمد بيت المال & عبدالحميد طلعت</strong></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line">
+        جميع الحقوق محفوظة بمناسبة أسبوع الفضاء العالمي © 2026 | ثانوية الفرسان الأهلية بمكة المكرمة
+      </div>
+    </div>
+  </footer>
+
+  <!-- الأكواد التفاعلية -->
+  <script>
+    const spaceCanvas = document.getElementById('space-canvas');
+    const sCtx = spaceCanvas.getContext('2d');
+    let starsArr = [];
+
+    function setupCanvasSize() {
+      spaceCanvas.width = window.innerWidth;
+      spaceCanvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', setupCanvasSize);
+    setupCanvasSize();
+
+    class CosmicParticle {
+      constructor() { this.init(); }
+      init() {
+        this.x = Math.random() * spaceCanvas.width;
+        this.y = Math.random() * spaceCanvas.height;
+        this.radius = Math.random() * 1.7 + 0.3;
+        this.alpha = Math.random() * 0.8 + 0.2;
+        this.speed = Math.random() * 0.02 + 0.005;
+        this.dir = Math.random() > 0.5 ? 1 : -1;
+      }
+      update() {
+        this.alpha += this.speed * this.dir;
+        if (this.alpha >= 1) { this.alpha = 1; this.dir = -1; }
+        else if (this.alpha <= 0.15) { this.alpha = 0.15; this.dir = 1; }
+      }
+      draw() {
+        sCtx.beginPath();
+        sCtx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        sCtx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
+        sCtx.shadowBlur = this.radius * 2;
+        sCtx.shadowColor = '#00f2fe';
+        sCtx.fill();
+        sCtx.shadowBlur = 0;
+      }
+    }
+
+    for (let i = 0; i < 160; i++) starsArr.push(new CosmicParticle());
+
+    function loopBackground() {
+      sCtx.clearRect(0, 0, spaceCanvas.width, spaceCanvas.height);
+      starsArr.forEach(s => { s.update(); s.draw(); });
+      requestAnimationFrame(loopBackground);
+    }
+    loopBackground();
+
+    function simulateAiAction(type) {
+      const box = document.getElementById('ai-decision-output');
+      if (type === 'obstacle') {
+        box.innerHTML = '🤖 <strong style="color:var(--cyan-neon)">قرار الرؤية الحاسوبية:</strong> تم رصد كتلة صخرية غير متوقعة بارتفاع 1.8 متر. تم تفعيل خوارزمية SLAM، وإعادة توجيه الدفع بزاوية 24 درجة يميناً لتفادي الاصطدام بنجاح.';
+      } else if (type === 'flare') {
+        box.innerHTML = '⚡ <strong style="color:var(--gold-royal)">قرار مجسات الإشعاع:</strong> قفزة حادة في تدفق البروتونات الشمسية. تم تحويل الأنظمة الحساسة إلى وضع الحماية (Safe-Mode) وإعادة توجيه الألواح لحماية المكونات الإلكترونية.';
+      } else if (type === 'signal') {
+        box.innerHTML = '🛰️ <strong style="color:var(--emerald-neon)">قرار الملاحة الذاتية:</strong> زمن تأخير الإشارة تخطى 22 دقيقة. تم الانتقال للتحكم الذاتي الكامل، واستكمال جمع العينات بدقة.';
+      }
+    }
+
+    const radarCanvas = document.getElementById('radar-canvas');
+    const rCtx = radarCanvas.getContext('2d');
+    radarCanvas.width = 320; radarCanvas.height = 320;
+    let radarAngle = 0;
+
+    function drawSpaceRadar() {
+      rCtx.clearRect(0, 0, 320, 320);
+      const cx = 160, cy = 160;
+      rCtx.strokeStyle = 'rgba(0, 242, 254, 0.2)';
+      rCtx.lineWidth = 1;
+      [35, 70, 105, 140].forEach(r => {
+        rCtx.beginPath();
+        rCtx.arc(cx, cy, r, 0, Math.PI * 2);
+        rCtx.stroke();
+      });
+
+      rCtx.save();
+      rCtx.translate(cx, cy);
+      rCtx.rotate(radarAngle);
+      const sweepGrad = rCtx.createRadialGradient(0, 0, 0, 0, 0, 140);
+      sweepGrad.addColorStop(0, 'rgba(0, 242, 254, 0.4)');
+      sweepGrad.addColorStop(1, 'rgba(0, 242, 254, 0)');
+      rCtx.beginPath();
+      rCtx.moveTo(0, 0);
+      rCtx.arc(0, 0, 140, 0, 0.35);
+      rCtx.closePath();
+      rCtx.fillStyle = sweepGrad;
+      rCtx.fill();
+      rCtx.restore();
+
+      radarAngle += 0.025;
+      requestAnimationFrame(drawSpaceRadar);
+    }
+    drawSpaceRadar();
+
+    const planetStatsDB = {
+      mercury: { name: 'عطارد', grav: 3.7, diam: 4879, dist: 57.9 },
+      venus:   { name: 'الزهرة', grav: 8.87, diam: 12104, dist: 108.2 },
+      earth:   { name: 'الأرض', grav: 9.81, diam: 12742, dist: 149.6 },
+      mars:    { name: 'المريخ', grav: 3.72, diam: 6779, dist: 227.9 },
+      jupiter: { name: 'المشتري', grav: 24.79, diam: 139820, dist: 778.5 },
+      saturn:  { name: 'زحل', grav: 10.44, diam: 116460, dist: 1430 },
+      uranus:  { name: 'أورانوس', grav: 8.69, diam: 50724, dist: 2870 },
+      neptune: { name: 'نبتون', grav: 11.15, diam: 49244, dist: 4500 }
+    };
+
+    function runPlanetComparison() {
+      const p1Key = document.getElementById('compare-planet-1').value;
+      const p2Key = document.getElementById('compare-planet-2').value;
+      const p1 = planetStatsDB[p1Key];
+      const p2 = planetStatsDB[p2Key];
+
+      const maxG = Math.max(p1.grav, p2.grav);
+      document.getElementById('bar-grav-1').style.width = `${(p1.grav / maxG) * 50}%`;
+      document.getElementById('bar-grav-2').style.width = `${(p2.grav / maxG) * 50}%`;
+      document.getElementById('compare-val-grav').innerText = `${p1.name}: ${p1.grav} | ${p2.name}: ${p2.grav}`;
+
+      const maxD = Math.max(p1.diam, p2.diam);
+      document.getElementById('bar-diam-1').style.width = `${(p1.diam / maxD) * 50}%`;
+      document.getElementById('bar-diam-2').style.width = `${(p2.diam / maxD) * 50}%`;
+      document.getElementById('compare-val-diam').innerText = `${p1.name}: ${p1.diam.toLocaleString()} كم | ${p2.name}: ${p2.diam.toLocaleString()} كم`;
+    }
+
+    function setMoonPhase(title, desc, btn) {
+      document.querySelectorAll('.moon-phase-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('moon-phase-desc-box').innerHTML = `<strong>${title}:</strong> ${desc}`;
+    }
+
+    function togglePhETFullscreen(iframeId) {
+      const elem = document.getElementById(iframeId);
+      if (!elem) return;
+      if (!document.fullscreenElement) {
+        if (elem.requestFullscreen) elem.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) document.exitFullscreen();
+      }
+    }
+
+    function reloadPhETSim(iframeId) {
+      const iframe = document.getElementById(iframeId);
+      if (iframe) {
+        const src = iframe.src;
+        iframe.src = '';
+        setTimeout(() => { iframe.src = src; }, 120);
+      }
+    }
+
+    function toggleNasaEyesFullscreen() {
+      const box = document.getElementById('nasa-eyes-viewport-box');
+      if (box && !document.fullscreenElement) {
+        box.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+
+    const planetaryFactors = [
+      { name: 'القمر (Moon)', factor: 0.166, icon: '🌕' },
+      { name: 'المريخ (Mars)', factor: 0.378, icon: '🔴' },
+      { name: 'عطارد (Mercury)', factor: 0.378, icon: '⚪' },
+      { name: 'الزهرة (Venus)', factor: 0.907, icon: '🟡' },
+      { name: 'المشتري (Jupiter)', factor: 2.528, icon: '🪐' },
+      { name: 'زحل (Saturn)', factor: 1.064, icon: '🪐' }
+    ];
+
+    function calculatePlanetaryWeights() {
+      const earthWeight = parseFloat(document.getElementById('user-earth-weight').value) || 70;
+      const container = document.getElementById('weight-results-cards');
+      container.innerHTML = '';
+      planetaryFactors.forEach(p => {
+        const val = (earthWeight * p.factor).toFixed(1);
+        const card = document.createElement('div');
+        card.className = 'weight-card-res';
+        card.innerHTML = `<div style="font-size:1.5rem; margin-bottom:4px;">${p.icon}</div><span class="name">${p.name}</span><span class="w">${val} <small>كجم</small></span>`;
+        container.appendChild(card);
+      });
+    }
+    calculatePlanetaryWeights();
+
+    const quizQuestions = [
+      {
+        q: 'ما هي سرعة الإفلات اللازمة لكسر جاذبية الأرض والتحليق نحو الفضاء السحيق؟',
+        opts: ['11.2 كم/ثانية', '7.9 كم/ثانية', '25.4 كم/ثانية', '3.8 كم/ثانية'],
+        ans: 0
+      },
+      {
+        q: 'من هو أول رائد فضاء عربي ومسلم انطلق إلى الفضاء عام 1985؟',
+        opts: ['صاحب السمو الملكي الأمير سلطان بن سلمان', 'د. سلطان النيادي', 'هزاع المنصوري', 'علي القرني'],
+        ans: 0
+      },
+      {
+        q: 'ما هو دور خوارزمية AutoNav المزودة بالذكاء الاصطناعي على مركبة المريخ؟',
+        opts: ['القيادة الذاتية وتجاوز الصخور تلقائياً', 'توليد الأكسجين', 'شحن البطاريات', 'تسجيل الصوت'],
+        ans: 0
+      },
+      {
+        q: 'ما الكوكب الأضخم في المجموعة الشمسية الذي تدور فيه "البقعة الحمراء العظيمة"؟',
+        opts: ['المشتري', 'زحل', 'المريخ', 'نبتون'],
+        ans: 0
+      }
+    ];
+
+    let currentQIdx = 0;
+    let quizScore = 0;
+
+    function renderQuizQuestion() {
+      const qData = quizQuestions[currentQIdx];
+      document.getElementById('quiz-progress-text').innerText = `السؤال ${currentQIdx + 1} من ${quizQuestions.length}`;
+      document.getElementById('quiz-score-text').innerText = `النقاط: ${quizScore}`;
+      document.getElementById('quiz-question-label').innerText = qData.q;
+      const optsBox = document.getElementById('quiz-options-container');
+      optsBox.innerHTML = '';
+
+      qData.opts.forEach((optText, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-opt-btn';
+        btn.innerText = optText;
+        btn.onclick = () => handleQuizAnswer(idx, btn);
+        optsBox.appendChild(btn);
+      });
+    }
+
+    function handleQuizAnswer(selectedIdx, btnElement) {
+      const qData = quizQuestions[currentQIdx];
+      const allBtns = document.querySelectorAll('.quiz-opt-btn');
+      allBtns.forEach(b => b.disabled = true);
+
+      if (selectedIdx === qData.ans) {
+        btnElement.classList.add('correct');
+        quizScore += 25;
+      } else {
+        btnElement.classList.add('wrong');
+        allBtns[qData.ans].classList.add('correct');
+      }
+
+      setTimeout(() => {
+        currentQIdx++;
+        if (currentQIdx < quizQuestions.length) {
+          renderQuizQuestion();
+        } else {
+          document.getElementById('quiz-question-screen').style.display = 'none';
+          document.getElementById('quiz-name-step').style.display = 'block';
+        }
+      }, 1000);
+    }
+
+    function generateDigitalCertificate() {
+      const input = document.getElementById('custom-cert-name-input');
+      const enteredName = (input && input.value.trim()) ? input.value.trim() : 'محمد الباحث الفضائي';
+      document.getElementById('cert-user-name').innerText = enteredName;
+      document.getElementById('quiz-name-step').style.display = 'none';
+      document.getElementById('certificate-zone').style.display = 'block';
+      document.getElementById('certificate-zone').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function restartQuiz() {
+      currentQIdx = 0;
+      quizScore = 0;
+      document.getElementById('quiz-question-screen').style.display = 'block';
+      document.getElementById('quiz-name-step').style.display = 'none';
+      document.getElementById('certificate-zone').style.display = 'none';
+      renderQuizQuestion();
+    }
+    renderQuizQuestion();
+
+    function openReportModal() { 
+      document.getElementById('report-modal').classList.add('open'); 
+      document.body.style.overflow = 'hidden';
+    }
+    function closeReportModal() { 
+      document.getElementById('report-modal').classList.remove('open'); 
+      document.body.style.overflow = '';
+    }
+    function handleCurtainClick(e, modalId) {
+      if (e.target.id === modalId) {
+        document.getElementById(modalId).classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function switchSimTab(tabId, btn) {
+      document.querySelectorAll('.sim-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.sim-tab-content-panel').forEach(p => p.classList.remove('active'));
+      const targetPane = document.getElementById(tabId);
+      if (targetPane) targetPane.classList.add('active');
+    }
+  </script>
+
+  <!-- زر عائم سريع للتقرير -->
+  <button onclick="openReportModal()" class="floating-report-btn" title="عرض التقرير الشامل">
+    <span class="pulse-icon">📄</span>
+    <span>عرض التقرير في صفحة كاملة</span>
+  </button>
+
+</body>
+</html>
