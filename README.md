@@ -100,9 +100,6 @@ git clone [https://github.com/GMC2000/-1.git](https://github.com/GMC2000/-1.git)
 * الطالب: **محمد الحازمي**
 * الطالب: **أحمد بيت المال**
 * الطالب: **عبدالحميد طلعت**
-
-
-
 ---
 <p align="center">
   <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
@@ -159,6 +156,7 @@ Built with **HTML5, CSS3, and Vanilla JavaScript** — zero heavy frameworks, fu
 
 ## Project Structure
 
+```text
 ├── index.html          # Core single-page interactive application
 ├── report.html         # Comprehensive documentation & event report
 ├── README.md           # Project documentation
@@ -212,6 +210,5 @@ This educational platform is published under the [MIT License](https://www.googl
 
 ---
 
-## الرخصة
 
-جميع الحقوق محفوظة بمناسبة أسبوع الفضاء العالمي © 2026 — مرخص بموجب رخصة [MIT](https://www.google.com/search?q=LICENSE).
+---
