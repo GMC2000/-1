@@ -75,7 +75,6 @@
       position: relative;
     }
 
-    /* شريط التمرير المخصص */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -87,7 +86,6 @@
       border-radius: 4px;
     }
 
-    /* خلفية الكانفاس الحية (Deep Space Canvas) */
     #space-canvas {
       position: fixed;
       top: 0;
@@ -98,7 +96,6 @@
       pointer-events: none;
     }
 
-    /* سدم فضائية متوهجة في الخلفية */
     .cosmic-nebula {
       position: fixed;
       border-radius: 50%;
@@ -148,26 +145,26 @@
     }
 
     /* ==========================================================================
-       2. الشريط العلوي الزجاجي العائم (Floating Glass Navbar)
+       2. الشريط العلوي الزجاجي العائم (Floating Glass Navbar) - بدون أي تداخل
        ========================================================================== */
     .navbar-floating {
       position: fixed;
-      top: 16px;
+      top: 14px;
       left: 50%;
       transform: translateX(-50%);
-      width: calc(100% - 36px);
-      max-width: 1400px;
+      width: min(1400px, calc(100% - 24px));
       z-index: 1000;
-      background: rgba(11, 16, 38, 0.78);
+      background: rgba(11, 16, 38, 0.88);
       backdrop-filter: var(--glass-blur);
       -webkit-backdrop-filter: var(--glass-blur);
       border: 1px solid var(--glass-border);
       border-radius: var(--radius-pill);
-      padding: 8px 24px;
+      padding: 8px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(255, 255, 255, 0.1);
+      gap: 12px;
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65);
       transition: var(--trans-smooth);
     }
 
@@ -176,38 +173,27 @@
       box-shadow: 0 20px 50px rgba(0, 242, 254, 0.15);
     }
 
-    /* شعار المدرسة والعنوان */
     .brand-cluster {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 10px;
       text-decoration: none;
       color: inherit;
       flex-shrink: 0;
     }
 
     .school-logo-slot {
-      height: 48px;
-      max-width: 200px;
-      border-radius: 12px;
-      background: rgba(0, 0, 0, 0.45);
-      border: 1.5px solid rgba(0, 242, 254, 0.4);
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+      height: 44px;
+      width: auto;
+      max-width: 140px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 242, 254, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      padding: 3px 8px;
-      transition: var(--trans-smooth);
+      padding: 2px 8px;
       flex-shrink: 0;
-    }
-
-    .school-logo-slot:hover {
-      transform: scale(1.04);
-      border-color: var(--cyan-neon);
-      box-shadow: 0 0 22px var(--cyan-neon);
     }
 
     .school-logo-slot img {
@@ -219,55 +205,50 @@
     }
 
     .brand-headings h1 {
-      font-size: 1.12rem;
+      font-size: 1.05rem;
       font-weight: 800;
       background: linear-gradient(90deg, #ffffff 40%, var(--cyan-neon) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin: 0;
       line-height: 1.2;
+      white-space: nowrap;
     }
 
     .brand-headings span {
       display: block;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       color: var(--text-muted);
       font-weight: 600;
-      margin-top: 2px;
+      white-space: nowrap;
     }
 
-    /* شارات المطورين والطلاب المنفذين */
     .dev-badge-capsule {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.09);
       border-radius: var(--radius-pill);
-      padding: 6px 14px;
-      flex-shrink: 0;
+      padding: 5px 12px;
+      flex-shrink: 1;
+      overflow: hidden;
     }
 
     .status-pulse-dot {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
       background: var(--emerald-neon);
-      box-shadow: 0 0 10px var(--emerald-neon);
-      animation: pulseGreen 1.8s infinite;
+      box-shadow: 0 0 8px var(--emerald-neon);
       flex-shrink: 0;
-    }
-
-    @keyframes pulseGreen {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(1.3); }
     }
 
     .dev-names-wrap {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 0.8rem;
+      gap: 6px;
+      font-size: 0.76rem;
       white-space: nowrap;
     }
 
@@ -279,27 +260,25 @@
       color: rgba(255, 255, 255, 0.22);
     }
 
-    /* أزرار النافبار */
     .nav-tools-group {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       flex-shrink: 0;
-      flex-wrap: nowrap;
     }
 
     .nav-btn-icon {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid var(--glass-border);
       color: var(--text-main);
-      padding: 7px 14px;
+      padding: 6px 11px;
       border-radius: var(--radius-pill);
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 700;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       text-decoration: none;
       transition: var(--trans-smooth);
       font-family: var(--font-ar);
@@ -325,25 +304,21 @@
       border-color: var(--emerald-neon);
       color: #ffffff;
     }
-    .nav-saudi-btn:hover {
-      background: rgba(16, 185, 129, 0.25);
-      border-color: #34d399;
-      color: #34d399;
-    }
 
     .nav-nasa-btn {
       background: rgba(11, 61, 145, 0.4);
       border-color: var(--cyan-neon);
       color: #ffffff;
     }
-    .nav-nasa-btn:hover {
-      background: rgba(0, 242, 254, 0.2);
-      border-color: var(--cyan-neon);
-      color: #ffffff;
+
+    @media (max-width: 1240px) {
+      .dev-badge-capsule {
+        display: none;
+      }
     }
 
     /* ==========================================================================
-       3. بطاقات الإشراف والقيادة التعليمية (Leadership Banner)
+       3. بطاقات الإشراف والقيادة التعليمية
        ========================================================================== */
     .leadership-strip {
       margin-top: 28px;
@@ -440,7 +415,7 @@
       color: var(--text-muted);
     }
 
-    /* شريط الأخبار الفضائية العاجلة والمهمات */
+    /* الأخبار العاجلة */
     .breaking-news-bar {
       background: rgba(14, 21, 46, 0.78);
       border: 1px solid var(--glass-border);
@@ -539,7 +514,7 @@
     }
 
     /* ==========================================================================
-       4. رادار الطقس الفضائي الحي (Space Weather Radar)
+       4. رادار الطقس الفضائي الحي
        ========================================================================== */
     .section-glass-block {
       background: var(--bg-panel);
@@ -717,7 +692,7 @@
     }
 
     /* ==========================================================================
-       5. النظام الشمسي والكواكب الثمانية (Solar System Cards)
+       5. النظام الشمسي والكواكب الثمانية
        ========================================================================== */
     .planets-grid {
       display: grid;
@@ -799,167 +774,6 @@
     .planet-stat-row span.k { color: var(--text-muted); }
     .planet-stat-row span.v { font-family: var(--font-code); color: #ffffff; font-weight: 600; }
 
-    /* ==========================================================================
-       6. الشمس والقمر (The Sun & The Moon)
-       ========================================================================== */
-    .celestial-split-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 28px;
-    }
-
-    .sun-chamber-card {
-      background: radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15), rgba(11, 16, 38, 0.85));
-      border: 1px solid rgba(245, 158, 11, 0.3);
-      border-radius: var(--radius-lg);
-      padding: 30px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .moon-chamber-card {
-      background: radial-gradient(circle at 80% 20%, rgba(203, 213, 225, 0.15), rgba(11, 16, 38, 0.85));
-      border: 1px solid rgba(203, 213, 225, 0.3);
-      border-radius: var(--radius-lg);
-      padding: 30px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .celestial-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: var(--radius-pill);
-      margin-bottom: 14px;
-    }
-    .badge-sun { background: rgba(245, 158, 11, 0.2); color: var(--gold-royal); border: 1px solid var(--gold-royal); }
-    .badge-moon { background: rgba(203, 213, 225, 0.2); color: #e2e8f0; border: 1px solid #cbd5e1; }
-
-    .interactive-moon-phase-selector {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-
-    .moon-phase-btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--glass-border);
-      color: var(--text-muted);
-      padding: 6px 12px;
-      border-radius: var(--radius-pill);
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: var(--trans-smooth);
-      font-family: var(--font-ar);
-    }
-
-    .moon-phase-btn.active, .moon-phase-btn:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: #ffffff;
-      color: #ffffff;
-    }
-
-    /* ==========================================================================
-       7. رواد الفضاء العرب والعالميون (Astronauts Deck)
-       ========================================================================== */
-    .astronauts-deck {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 24px;
-    }
-
-    .astro-card-elite {
-      background: var(--bg-card-inner);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      transition: var(--trans-smooth);
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-
-    .astro-card-elite.arab-flagged {
-      border-right: 4px solid var(--emerald-neon);
-    }
-
-    .astro-card-elite:hover {
-      border-color: var(--cyan-neon);
-      transform: translateY(-6px);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
-    }
-
-    .astro-head-row {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 14px;
-    }
-
-    .astro-avatar-img {
-      width: 62px;
-      height: 62px;
-      border-radius: 18px;
-      object-fit: cover;
-      object-position: top center;
-      border: 1.5px solid rgba(0, 242, 254, 0.4);
-      box-shadow: 0 0 16px rgba(0, 242, 254, 0.22);
-      flex-shrink: 0;
-      transition: var(--trans-smooth);
-      background: #030612;
-    }
-
-    .astro-card-elite:hover .astro-avatar-img {
-      transform: scale(1.08);
-      border-color: var(--cyan-neon);
-      box-shadow: 0 0 24px var(--cyan-neon);
-    }
-
-    .astro-card-elite.arab-flagged .astro-avatar-img {
-      border-color: rgba(16, 185, 129, 0.5);
-      box-shadow: 0 0 16px rgba(16, 185, 129, 0.22);
-    }
-
-    .astro-card-elite.arab-flagged:hover .astro-avatar-img {
-      border-color: var(--emerald-neon);
-      box-shadow: 0 0 24px var(--emerald-neon);
-    }
-
-    .astro-names h4 {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .astro-names span {
-      font-size: 0.78rem;
-      color: var(--cyan-neon);
-      font-weight: 600;
-    }
-
-    .astro-mission-badge {
-      font-size: 0.75rem;
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.25);
-      color: var(--cyan-neon);
-      padding: 3px 10px;
-      border-radius: var(--radius-pill);
-      margin-bottom: 12px;
-      align-self: flex-start;
-      font-weight: 700;
-    }
-
-    .astro-bio {
-      font-size: 0.87rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
     /* أداة مقارنة الكواكب */
     .compare-tool-container {
       background: var(--bg-card-inner);
@@ -1032,6 +846,162 @@
     }
 
     /* ==========================================================================
+       6. الشمس والقمر
+       ========================================================================== */
+    .celestial-split-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
+    }
+
+    .sun-chamber-card {
+      background: radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15), rgba(11, 16, 38, 0.85));
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .moon-chamber-card {
+      background: radial-gradient(circle at 80% 20%, rgba(203, 213, 225, 0.15), rgba(11, 16, 38, 0.85));
+      border: 1px solid rgba(203, 213, 225, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .celestial-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 14px;
+    }
+    .badge-sun { background: rgba(245, 158, 11, 0.2); color: var(--gold-royal); border: 1px solid var(--gold-royal); }
+    .badge-moon { background: rgba(203, 213, 225, 0.2); color: #e2e8f0; border: 1px solid #cbd5e1; }
+
+    .interactive-moon-phase-selector {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .moon-phase-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--glass-border);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: var(--trans-smooth);
+      font-family: var(--font-ar);
+    }
+
+    .moon-phase-btn.active, .moon-phase-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+
+    /* ==========================================================================
+       7. رواد الفضاء العرب والعالميون
+       ========================================================================== */
+    .astronauts-deck {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+    }
+
+    .astro-card-elite {
+      background: var(--bg-card-inner);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      transition: var(--trans-smooth);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .astro-card-elite.arab-flagged {
+      border-right: 4px solid var(--emerald-neon);
+    }
+
+    .astro-card-elite:hover {
+      border-color: var(--cyan-neon);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .astro-head-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 14px;
+    }
+
+    .astro-avatar-img {
+      width: 62px;
+      height: 62px;
+      border-radius: 18px;
+      object-fit: cover;
+      object-position: top center;
+      border: 1.5px solid rgba(0, 242, 254, 0.4);
+      box-shadow: 0 0 16px rgba(0, 242, 254, 0.22);
+      flex-shrink: 0;
+      transition: var(--trans-smooth);
+      background: #030612;
+    }
+
+    .astro-card-elite:hover .astro-avatar-img {
+      transform: scale(1.08);
+      border-color: var(--cyan-neon);
+      box-shadow: 0 0 24px var(--cyan-neon);
+    }
+
+    .astro-card-elite.arab-flagged .astro-avatar-img {
+      border-color: rgba(16, 185, 129, 0.5);
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.22);
+    }
+
+    .astro-names h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .astro-names span {
+      font-size: 0.78rem;
+      color: var(--cyan-neon);
+      font-weight: 600;
+    }
+
+    .astro-mission-badge {
+      font-size: 0.75rem;
+      background: rgba(0, 242, 254, 0.1);
+      border: 1px solid rgba(0, 242, 254, 0.25);
+      color: var(--cyan-neon);
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 12px;
+      align-self: flex-start;
+      font-weight: 700;
+    }
+
+    .astro-bio {
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
        8. مختبر المحاكاة الفضائي (Simulators Lab)
        ========================================================================== */
     .simulators-tab-nav {
@@ -1078,39 +1048,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .sim-workbench-grid {
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 25px;
-    }
-
-    .sim-canvas-viewport {
-      height: 320px;
-      background: #030612;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-md);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .sim-canvas-viewport canvas {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    .sim-controls-sidebar {
-      background: var(--bg-card-inner);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-md);
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 15px;
-    }
-
-    /* مختبر PhET */
     .phet-sim-container {
       display: flex;
       flex-direction: column;
@@ -1187,48 +1124,6 @@
       display: block;
     }
 
-    .phet-mission-guide {
-      background: var(--bg-card-inner);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-md);
-      padding: 20px 24px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-    }
-
-    .mission-step-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 14px 18px;
-      border-right: 3px solid var(--cyan-neon);
-      transition: var(--trans-smooth);
-    }
-
-    .mission-step-card:hover {
-      background: rgba(255, 255, 255, 0.06);
-      transform: translateY(-3px);
-    }
-
-    .mission-step-card h5 {
-      font-size: 0.92rem;
-      font-weight: 800;
-      color: #ffffff;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .mission-step-card p {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin: 0;
-    }
-
-    /* حاسبة الوزن */
     .weight-calc-wrap {
       display: flex;
       flex-direction: column;
@@ -1402,18 +1297,6 @@
       line-height: 1.4;
     }
 
-    .ax2-spotlight-box {
-      background: linear-gradient(135deg, rgba(13, 22, 54, 0.85) 0%, rgba(6, 78, 59, 0.25) 100%);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      display: grid;
-      grid-template-columns: 1fr 340px;
-      gap: 22px;
-      align-items: center;
-    }
-
-    /* ناسا */
     .nasa-header-banner {
       background: linear-gradient(135deg, rgba(11, 61, 145, 0.4) 0%, rgba(3, 6, 18, 0.85) 100%);
       border: 1px solid rgba(0, 242, 254, 0.35);
@@ -1463,54 +1346,6 @@
       font-family: var(--font-num);
     }
 
-    .nasa-tabs-nav {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding-bottom: 8px;
-      margin-bottom: 22px;
-      scrollbar-width: thin;
-    }
-
-    .nasa-tab-btn {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--glass-border);
-      color: var(--text-muted);
-      padding: 10px 20px;
-      border-radius: var(--radius-pill);
-      font-size: 0.88rem;
-      font-weight: 700;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: var(--trans-smooth);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-ar);
-    }
-
-    .nasa-tab-btn:hover {
-      background: rgba(0, 242, 254, 0.12);
-      color: #ffffff;
-      border-color: var(--cyan-neon);
-    }
-
-    .nasa-tab-btn.active {
-      background: linear-gradient(135deg, #0b3d91, #00f2fe);
-      color: #ffffff;
-      border-color: var(--cyan-neon);
-      box-shadow: 0 4px 18px rgba(0, 242, 254, 0.4);
-    }
-
-    .nasa-tab-pane {
-      display: none;
-      animation: fadeInSim 0.4s ease;
-    }
-
-    .nasa-tab-pane.active {
-      display: block;
-    }
-
     .nasa-eyes-card {
       background: var(--bg-card-inner);
       border: 1px solid var(--glass-border);
@@ -1528,30 +1363,6 @@
       margin-bottom: 15px;
     }
 
-    .nasa-eyes-switch-group {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .nasa-eyes-subbtn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--glass-border);
-      color: var(--text-muted);
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
-      font-size: 0.82rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--trans-smooth);
-    }
-
-    .nasa-eyes-subbtn:hover, .nasa-eyes-subbtn.active {
-      background: rgba(0, 242, 254, 0.2);
-      border-color: var(--cyan-neon);
-      color: #fff;
-    }
-
     .nasa-eyes-viewport {
       position: relative;
       width: 100%;
@@ -1567,209 +1378,6 @@
       height: 100%;
       border: none;
       display: block;
-    }
-
-    .nasa-apod-box {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 25px;
-      background: var(--bg-card-inner);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      align-items: center;
-    }
-
-    .nasa-apod-img-wrap {
-      position: relative;
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      background: #000;
-      min-height: 380px;
-      max-height: 480px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .nasa-apod-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .nasa-apod-details {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .compare-slider-container {
-      position: relative;
-      width: 100%;
-      max-width: 960px;
-      height: 520px;
-      margin: 0 auto;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      border: 2px solid var(--cyan-neon);
-      box-shadow: 0 10px 40px rgba(0, 242, 254, 0.2);
-      user-select: none;
-    }
-
-    .compare-img-layer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .compare-label-tag {
-      position: absolute;
-      bottom: 20px;
-      padding: 6px 14px;
-      border-radius: var(--radius-pill);
-      font-size: 0.82rem;
-      font-weight: 700;
-      backdrop-filter: blur(8px);
-      z-index: 5;
-    }
-
-    .compare-label-left {
-      left: 20px;
-      background: rgba(11, 61, 145, 0.7);
-      border: 1px solid var(--cyan-neon);
-      color: #fff;
-    }
-
-    .compare-label-right {
-      right: 20px;
-      background: rgba(157, 78, 221, 0.7);
-      border: 1px solid var(--violet-neon);
-      color: #fff;
-    }
-
-    .mars-rover-grid {
-      display: grid;
-      grid-template-columns: 340px 1fr;
-      gap: 22px;
-    }
-
-    .mars-weather-card {
-      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(13, 22, 54, 0.9) 100%);
-      border: 1px solid rgba(239, 68, 68, 0.4);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-    }
-
-    .mars-weather-metric-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      font-size: 0.86rem;
-    }
-
-    .mars-weather-metric-row:last-child {
-      border-bottom: none;
-    }
-
-    .mars-weather-val {
-      font-family: var(--font-num);
-      font-weight: 700;
-      color: #ff6b6b;
-    }
-
-    .mars-photos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-
-    .mars-photo-item {
-      background: var(--bg-card-inner);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      cursor: pointer;
-      transition: var(--trans-smooth);
-    }
-
-    .mars-photo-item:hover {
-      border-color: #ff6b6b;
-      transform: translateY(-4px);
-    }
-
-    .mars-photo-item img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .mars-photo-item .caption {
-      padding: 10px 12px;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .artemis-showcase-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      background: var(--bg-card-inner);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      align-items: center;
-    }
-
-    .nasa-portals-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-      margin-top: 24px;
-    }
-
-    .nasa-portal-card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--radius-md);
-      padding: 18px 20px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      transition: var(--trans-smooth);
-    }
-
-    .nasa-portal-card:hover {
-      background: rgba(0, 242, 254, 0.1);
-      border-color: var(--cyan-neon);
-      transform: translateY(-3px);
-    }
-
-    .nasa-portal-card .portal-icon {
-      font-size: 1.8rem;
-    }
-
-    .nasa-portal-card .portal-info h4 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #fff;
-      margin: 0 0 3px 0;
-    }
-
-    .nasa-portal-card .portal-info span {
-      font-size: 0.78rem;
-      color: var(--text-muted);
     }
 
     /* ==========================================================================
@@ -1883,7 +1491,6 @@
       color: var(--text-muted);
     }
 
-    /* النوافذ المنبثقة */
     .modal-curtain {
       position: fixed;
       top: 0;
@@ -1948,57 +1555,6 @@
       border-color: var(--rose-neon);
       color: var(--rose-neon);
       transform: rotate(90deg);
-    }
-
-    .auth-tab-row {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 22px;
-    }
-
-    .auth-tab-btn {
-      flex: 1;
-      padding: 10px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--glass-border);
-      color: var(--text-muted);
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      cursor: pointer;
-      transition: var(--trans-smooth);
-      font-family: var(--font-ar);
-    }
-
-    .auth-tab-btn.active {
-      background: rgba(0, 242, 254, 0.18);
-      border-color: var(--cyan-neon);
-      color: #ffffff;
-    }
-
-    .pin-input-cluster {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      margin: 25px 0;
-    }
-
-    .pin-digit-box {
-      width: 58px;
-      height: 64px;
-      border-radius: var(--radius-sm);
-      background: rgba(255, 255, 255, 0.06);
-      border: 1.5px solid var(--glass-border);
-      color: var(--cyan-neon);
-      font-family: var(--font-num);
-      font-size: 2rem;
-      text-align: center;
-      outline: none;
-      transition: var(--trans-smooth);
-    }
-
-    .pin-digit-box:focus {
-      border-color: var(--cyan-neon);
-      box-shadow: 0 0 15px var(--cyan-glow);
     }
 
     .floating-report-btn {
@@ -2077,20 +1633,17 @@
     }
 
     @media (max-width: 1024px) {
-      .dev-badge-capsule { display: none; }
       .weather-radar-grid { grid-template-columns: 1fr; }
-      .sim-workbench-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 680px) {
-      .navbar-floating { padding: 8px 16px; }
-      .brand-headings h1 { font-size: 1rem; }
-      .school-logo-slot { height: 40px; }
-      .platform-container { padding-top: 115px; }
+      .navbar-floating { padding: 8px 14px; }
+      .brand-headings h1 { font-size: 0.95rem; }
+      .school-logo-slot { height: 38px; }
+      .platform-container { padding-top: 110px; }
       .leadership-strip { margin-top: 18px; }
-      .section-glass-block { padding: 22px; }
+      .section-glass-block { padding: 20px; }
       .compare-selectors-row { grid-template-columns: 1fr; }
-      .modal-glass-dialog { padding: 22px; }
     }
   </style>
 </head>
@@ -2099,7 +1652,6 @@
   <!-- خلفية الفضاء العميقة التفاعلية -->
   <canvas id="space-canvas"></canvas>
 
-  <!-- سدم فضائية متوهجة -->
   <div class="cosmic-nebula nebula-purple"></div>
   <div class="cosmic-nebula nebula-blue"></div>
   <div class="cosmic-nebula nebula-cyan"></div>
@@ -2117,7 +1669,7 @@
       </div>
     </div>
 
-    <!-- شارة فخرية للمطورين والمنفذين -->
+    <!-- شارة المطورين والمنفذين -->
     <div class="dev-badge-capsule">
       <span class="status-pulse-dot"></span>
       <div class="dev-names-wrap">
@@ -2129,7 +1681,7 @@
       </div>
     </div>
 
-    <!-- أدوات الانتقال للأجنحة -->
+    <!-- أزرار التنقل السريع -->
     <div class="nav-tools-group">
       <a href="#ai-space-hub" class="nav-btn-icon nav-btn-accent" title="مختبر الذكاء الاصطناعي في الفضاء">
         <span>🤖 الذكاء الاصطناعي</span>
@@ -2145,11 +1697,9 @@
 
   <main class="platform-container">
 
-    <!-- [2] بطاقات الإشراف والقيادة التعليمية (Leadership Banner) -->
+    <!-- [2] بطاقات الإشراف والقيادة التعليمية -->
     <section class="leadership-strip">
       <div class="leadership-grid">
-        
-        <!-- بطاقة مدير المدرسة -->
         <div class="leader-card-glass">
           <div class="leader-icon-circle gold">🏛️</div>
           <div class="leader-details">
@@ -2159,7 +1709,6 @@
           </div>
         </div>
 
-        <!-- بطاقة المعلم المشرف -->
         <div class="leader-card-glass mentor-accent">
           <div class="leader-icon-circle cyan">🔭</div>
           <div class="leader-details">
@@ -2168,11 +1717,10 @@
             <p>المعلم المشرف | التوجيه العلمي والإشراف على أسبوع الفضاء</p>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- شريط الأخبار الفضائية العاجلة والمهمات الفضائية المتتالية -->
+    <!-- شريط الأخبار الفضائية العاجلة -->
     <div class="breaking-news-bar">
       <div class="news-badge">
         <span class="pulse-icon">⚡</span>
@@ -2206,7 +1754,7 @@
       </div>
     </div>
 
-    <!-- [قسم خاص] الذكاء الاصطناعي في الفضاء (AI Space Exploration Hub) -->
+    <!-- [قسم خاص] الذكاء الاصطناعي في الفضاء -->
     <section class="section-glass-block" id="ai-space-hub">
       <div class="section-title-wrap">
         <h2 class="section-heading-primary">
@@ -2217,55 +1765,47 @@
       </div>
 
       <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:28px; line-height:1.75;">
-        يمثل الذكاء الاصطناعي (AI) العقل المدبر لرحلات الفضاء الحديثة؛ حيث يمكن المركبات الفضائية والروبوتات من اتخاذ قرارات مصيرية فورية وتفادي المخاطر في البيئات الكونية القاسية دون انتظار إشارات التحكم الأرضية.
+        يمثل الذكاء الاصطناعي العقل المدبر لرحلات الفضاء الحديثة؛ حيث يمكن المركبات الفضائية من اتخاذ قرارات مصيرية فورية وتفادي المخاطر الكونية دون انتظار إشارات التحكم الأرضية.
       </p>
 
-      <!-- شبكة تجارب الذكاء الاصطناعي الفضائي -->
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:22px; margin-bottom:30px;">
-        
-        <!-- التجربة 1: القيادة الذاتية لمركبات المريخ -->
         <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--cyan-neon);">
           <div style="font-size:2rem; margin-bottom:10px;">🚗🔴</div>
           <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">القيادة الذاتية (AutoNav)</h3>
           <div style="font-size:0.78rem; color:var(--cyan-neon); font-weight:700; margin-bottom:10px;">مركبة Perseverance على المريخ</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
-            تستخدم خوارزميات الرؤية الحاسوبية (Computer Vision) والخرائط ثلاثية الأبعاد لتحليل الصخور والتضاريس الوعرة، وتحديد المسار الآمن وتجاوز العقبات تلقائياً دون تدخل بشري مباشر.
+            تستخدم خوارزميات الرؤية الحاسوبية والخرائط ثلاثية الأبعاد لتحليل الصخور وتحديد المسار الآمن وتجاوز العقبات تلقائياً دون تدخل بشري مباشر.
           </p>
         </div>
 
-        <!-- التجربة 2: تحليل البيانات الضخمة واكتشاف الكواكب -->
         <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--violet-neon);">
           <div style="font-size:2rem; margin-bottom:10px;">🔭🪐</div>
           <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">صيد الكواكب الخارجية (Exoplanets)</h3>
           <div style="font-size:0.78rem; color:var(--violet-neon); font-weight:700; margin-bottom:10px;">خوارزميات التعلم العميق (Deep Learning)</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
-            فحص ملايين منحنيات الضوء لبيانات تلسكوبات (Kepler و TESS)، حيث نجحت الشبكات العصبية في رصد انخفاضات الضوء الدقيقة واكتشاف كواكب جديدة صالحة للحياة في دقائق بدلاً من سنوات.
+            فحص ملايين منحنيات الضوء لبيانات التلسكوبات، حيث ترصد الشبكات العصبية انخفاضات الضوء الدقيقة وتكتشف كواكب جديدة صالحة للحياة.
           </p>
         </div>
 
-        <!-- التجربة 3: تفادي الحطام وحماية الأقمار -->
         <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--emerald-neon);">
           <div style="font-size:2rem; margin-bottom:10px;">🛰️🛡️</div>
           <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">درع المدارات الذكي</h3>
           <div style="font-size:0.78rem; color:var(--emerald-neon); font-weight:700; margin-bottom:10px;">الشبكات غير الأرضية (NTN) وحماية الأقمار</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
-            حساب احتمالات التصادم المداري مع آلاف قطع الحطام الفضائي بدقة متناهية، وإجراء مناورات تفادٍ تلقائية فورية لحماية الأقمار الصناعية وشبكات الاتصالات المتقدمة.
+            حساب احتمالات التصادم المداري مع آلاف قطع الحطام الفضائي بدقة، وتنفيذ مناورات تفادٍ تلقائية فورية لحماية الأقمار الصناعية وشبكات الاتصالات.
           </p>
         </div>
 
-        <!-- التجربة 4: المساعدات الذكية للرواد -->
         <div style="background:var(--bg-card-inner); border:1px solid var(--glass-border); border-radius:var(--radius-md); padding:24px; border-top:3px solid var(--gold-royal);">
           <div style="font-size:2rem; margin-bottom:10px;">👨‍🚀💬</div>
           <h3 style="font-size:1.2rem; font-weight:800; color:#fff; margin-bottom:8px;">المساعد الفضائي التفاعلي (CIMON)</h3>
           <div style="font-size:0.78rem; color:var(--gold-royal); font-weight:700; margin-bottom:10px;">محطة الفضاء الدولية (ISS)</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
-            روبوت ذكاء اصطناعي طائر مزود بمعالجة اللغة الطبيعية، يعاون الرواد في إجراء التجارب المعملية المعقدة، وتقديم الدعم النفسي وإدارة أنظمة المحطة.
+            روبوت ذكاء اصطناعي طائر مزود بمعالجة اللغة الطبيعية، يعاون الرواد في إجراء التجارب العلمية المعقدة وإدارة أنظمة المحطة.
           </p>
         </div>
-
       </div>
 
-      <!-- محاكي ذكاء اصطناعي تفاعلي مصغر داخل الموقع -->
       <div style="background:radial-gradient(circle at center, rgba(13,22,54,0.95), rgba(7,10,24,0.98)); border:1px solid rgba(0,242,254,0.3); border-radius:var(--radius-lg); padding:25px;">
         <h3 style="font-size:1.15rem; font-weight:800; color:var(--cyan-neon); margin-bottom:10px;">
           ⚡ محاكي قرارات الملاحة الذاتية لمسبار الفضاء (AI Trajectory Simulator)
@@ -2360,7 +1900,7 @@
       </div>
     </section>
 
-    <!-- [4] النظام الشمسي – الكواكب الثمانية -->
+    <!-- [4] النظام الشمسي -->
     <section class="section-glass-block">
       <div class="section-title-wrap">
         <h2 class="section-heading-primary">
@@ -2519,7 +2059,7 @@
       <!-- أداة مقارنة الكواكب -->
       <div class="compare-tool-container">
         <h3 style="font-size:1.2rem; font-weight:800; color:var(--cyan-neon); margin-bottom:12px;">⚖️ أداة مقارنة الكواكب التفاعلية</h3>
-        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">اختر أي كوكبين من القوائم لمقارنة الخصائص الفيزيائية ومخططات الجاذبية والكتلة والحجم مباشرة:</p>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:18px;">اختر أي كوكبين لمقارنة الخصائص الفيزيائية ومخططات الجاذبية والكتلة والحجم مباشرة:</p>
 
         <div class="compare-selectors-row">
           <div>
@@ -2765,7 +2305,7 @@
             </div>
           </div>
           <span class="astro-mission-badge">طاقم Crew-6 (6 أشهر - 2023)</span>
-          <p class="astro-bio">رائد الفضاء الإماراتي، أول عربي يخوض مهمة سير في الفضاء المفتوح (Spacewalk) خارج محطة الفضاء الدولية لمدة 7 ساعات.</p>
+          <p class="astro-bio">رائد الفضاء الإماراتي، أول عربي يخوض مهمة سير في الفضاء المفتوح خارج محطة الفضاء الدولية لمدة 7 ساعات.</p>
         </div>
       </div>
     </section>
@@ -2982,11 +2522,9 @@
 
   <!-- الأكواد التفاعلية -->
   <script>
-    /* 1. خلفية الفضاء */
     const spaceCanvas = document.getElementById('space-canvas');
     const sCtx = spaceCanvas.getContext('2d');
     let starsArr = [];
-    let meteorsArr = [];
 
     function setupCanvasSize() {
       spaceCanvas.width = window.innerWidth;
@@ -3030,7 +2568,6 @@
     }
     loopBackground();
 
-    /* 2. محاكي قرارات الذكاء الاصطناعي */
     function simulateAiAction(type) {
       const box = document.getElementById('ai-decision-output');
       if (type === 'obstacle') {
@@ -3042,7 +2579,6 @@
       }
     }
 
-    /* 3. رادار الطقس */
     const radarCanvas = document.getElementById('radar-canvas');
     const rCtx = radarCanvas.getContext('2d');
     radarCanvas.width = 320; radarCanvas.height = 320;
@@ -3078,7 +2614,6 @@
     }
     drawSpaceRadar();
 
-    /* 4. مقارنة الكواكب */
     const planetStatsDB = {
       mercury: { name: 'عطارد', grav: 3.7, diam: 4879, dist: 57.9 },
       venus:   { name: 'الزهرة', grav: 8.87, diam: 12104, dist: 108.2 },
@@ -3107,14 +2642,12 @@
       document.getElementById('compare-val-diam').innerText = `${p1.name}: ${p1.diam.toLocaleString()} كم | ${p2.name}: ${p2.diam.toLocaleString()} كم`;
     }
 
-    /* 5. أطوار القمر */
     function setMoonPhase(title, desc, btn) {
       document.querySelectorAll('.moon-phase-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       document.getElementById('moon-phase-desc-box').innerHTML = `<strong>${title}:</strong> ${desc}`;
     }
 
-    /* 6. PhET Simulators Controls */
     function togglePhETFullscreen(iframeId) {
       const elem = document.getElementById(iframeId);
       if (!elem) return;
@@ -3143,7 +2676,6 @@
       }
     }
 
-    /* 7. حاسبة الوزن */
     const planetaryFactors = [
       { name: 'القمر (Moon)', factor: 0.166, icon: '🌕' },
       { name: 'المريخ (Mars)', factor: 0.378, icon: '🔴' },
@@ -3167,7 +2699,6 @@
     }
     calculatePlanetaryWeights();
 
-    /* 8. الاختبار والشهادة */
     const quizQuestions = [
       {
         q: 'ما هي سرعة الإفلات اللازمة لكسر جاذبية الأرض والتحليق نحو الفضاء السحيق؟',
@@ -3254,7 +2785,6 @@
     }
     renderQuizQuestion();
 
-    /* 9. النوافذ والتبويبات */
     function openReportModal() { 
       document.getElementById('report-modal').classList.add('open'); 
       document.body.style.overflow = 'hidden';
