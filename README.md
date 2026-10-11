@@ -112,7 +112,7 @@ This educational platform is published under the [MIT License](https://www.googl
 </p>
 
 <h1 align="center">بوابة أسبوع الفضاء العالمي | ثانوية الفرسان الأهلية</h1>
-<p align="center"><strong>لبوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026) </strong></p>
+<p align="center"><strong> البوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026) </strong></p>
 
 <p align="center">
   <a href="#arabic">العربية ↓</a> •
