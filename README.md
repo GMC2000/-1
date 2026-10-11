@@ -1,15 +1,14 @@
-
-
-<p align="center">
+فهمت عليك تماماً! أنت تقصد ملف **`README.md`**<p align="center">
   <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
 </p>
 
 <h1 align="center">بوابة أسبوع الفضاء العالمي | ثانوية الفرسان الأهلية</h1>
-<p align="center"><strong> البوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026) </strong></p>
+<p align="center"><strong>البوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026)</strong></p>
 
-
-
-# بوابة أسبوع الفضاء العالمي — ثانوية الفرسان الأهلية
+<p align="center">
+  <a href="#english">English Version ↓</a> •
+  <a href="https://gmc2000.github.io/World-Space-Week-Portal/">🌐 زيارة المنصة مباشرة</a>
+</p>
 
 منصة ويب علمية تفاعلية تم تطويرها بمناسبة **أسبوع الفضاء العالمي 2026** بـ **ثانوية الفرسان الأهلية بمكة المكرمة**. صُممت المنصة بنمط **الواجهات الزجاجية المظلمة (Dark Glassmorphism)** الحديث، وتجمع بين الرصد الفوري للطقس الفضائي، وتطبيقات الذكاء الاصطناعي في الفضاء السحيق، ومحاكيات الفيزياء المدارية، وجناح الفضاء السعودي ووكالة ناسا.
 
@@ -19,36 +18,28 @@
 
 ## أبرز المزايا والركائز العلمية
 
-* **مختبر الذكاء الاصطناعي في الفضاء (AI Space Lab)** — استعراض تطبيقات الذكاء الاصطناعي في الاستكشاف الكوني:
-* القيادة الذاتية للمركبات المريخية (*AutoNav*).
-* صيد الكواكب الخارجية وتحليل منحنيات الضوء بالتعلم العميق.
-* درع المدارات الذكي وتفادي الحطام الفضائي لحماية الأقمار والشبكات غير الأرضية (*NTN*).
-* المساعدات الذكية للرواد (*CIMON*) ومحاكي قرارات الملاحة الذاتية التفاعلي.
-
-
-* **رادار الطقس الفضائي الحي** — مسح راداري بصري ومتابعة مستمرة لمقاييس NOAA (**G-Scale وS-Scale وR-Scale**)، مع قراءات فورية لسرعة الرياح الشمسية وكثافة البروتونات والمجال المغناطيسي.
-* **النظام الشمسي وأداة المقارنة التفاعلية** — بطاقات ثلاثية الأبعاد للكواكب الثمانية، والشمس وأطوار القمر، مع أداة حية لمقارنة الجاذبية والقطر والمسافة بين أي كوكبين.
-* **المملكة نحو الفضاء (الفضاء السعودي)** — توثيق إنجازات قطاع الفضاء الوطني:
-* هيئة الاتصالات والفضاء والتقنية (**CST**) ووكالة الفضاء السعودية (**SSA**).
-* توثيق مهمة Ax-2 التاريخية (*ريانة برناوي وعلي القرني*) ورحلة صاحب السمو الملكي الأمير سلطان بن سلمان.
-
-
-* **جناح وكالة ناسا التفاعلي** — تكامل مباشر مع:
-* محاكي ناسا ثلاثي الأبعاد (*NASA Eyes on the Solar System*).
-* صورة اليوم الفلكية (*NASA APOD*) مع جلب مباشر من NASA API.
-* مقارنة تلسكوب هابل وجيمس ويب (*JWST*).
-* طقس المريخ المباشر ومعرض صور مسبار Perseverance.
-
-
-* **مختبر محاكيات PhET الفيزيائية** — تجارب معملية تفاعلية معتمدة من جامعة كولورادو:
-* الجاذبية وحركة المدارات الفضائية.
-* قياس قوى التجاذب بالنيوتن وقانون التربيع العكسي.
-* ميكانيكا المقذوفات الصاروخية والأنظمة متعددة الأجرام.
-
-
-* **حاسبة الوزن على الأجرام السماوية** — أداة لحساب وزن الزائر على الكواكب والقمر والشمس وفق تسارع الجاذبية لكل جرم.
-* **تحدي الفضاء والشهادة الرقمية المعتمدة** — اختبار معرفي تفاعلي يتيح إصدار شهادة شكر وتقدير رسمية باسم الطالب قابلة للطباعة المباشرة وحفظها PDF.
-* **نافذة التقرير الموثق** — عرض التقرير الشامل والموثق للفعالية بملء الشاشة مع دعم الطباعة.
+- **مختبر الذكاء الاصطناعي في الفضاء (AI Space Lab)** — استعراض تطبيقات الذكاء الاصطناعي في الاستكشاف الكوني:
+  - القيادة الذاتية للمركبات المريخية (*AutoNav*).
+  - صيد الكواكب الخارجية وتحليل منحنيات الضوء بالتعلم العميق.
+  - درع المدارات الذكي وتفادي الحطام الفضائي لحماية الأقمار والشبكات غير الأرضية (*NTN*).
+  - المساعدات الذكية للرواد (*CIMON*) ومحاكي قرارات الملاحة الذاتية التفاعلي.
+- **رادار الطقس الفضائي الحي** — مسح راداري بصري ومتابعة مستمرة لمقاييس NOAA (**G-Scale وS-Scale وR-Scale**)، مع قراءات فورية لسرعة الرياح الشمسية وكثافة البروتونات والمجال المغناطيسي.
+- **النظام الشمسي وأداة المقارنة التفاعلية** — بطاقات ثلاثية الأبعاد للكواكب الثمانية، والشمس وأطوار القمر، مع أداة حية لمقارنة الجاذبية والقطر والمسافة بين أي كوكبين.
+- **المملكة نحو الفضاء (الفضاء السعودي)** — توثيق إنجازات قطاع الفضاء الوطني:
+  - هيئة الاتصالات والفضاء والتقنية (**CST**) ووكالة الفضاء السعودية (**SSA**).
+  - توثيق مهمة Ax-2 التاريخية (*ريانة برناوي وعلي القرني*) ورحلة صاحب السمو الملكي الأمير سلطان بن سلمان.
+- **جناح وكالة ناسا التفاعلي** — تكامل مباشر مع:
+  - محاكي ناسا ثلاثي الأبعاد (*NASA Eyes on the Solar System*).
+  - صورة اليوم الفلكية (*NASA APOD*) مع جلب مباشر من NASA API.
+  - مقارنة تلسكوب هابل وجيمس ويب (*JWST*).
+  - طقس المريخ المباشر ومعرض صور مسبار Perseverance.
+- **مختبر محاكيات PhET الفيزيائية** — تجارب معملية تفاعلية معتمدة من جامعة كولورادو:
+  - الجاذبية وحركة المدارات الفضائية.
+  - قياس قوى التجاذب بالنيوتن وقانون التربيع العكسي.
+  - ميكانيكا المقذوفات الصاروخية والأنظمة متعددة الأجرام.
+- **حاسبة الوزن على الأجرام السماوية** — أداة لحساب وزن الزائر على الكواكب والقمر والشمس وفق تسارع الجاذبية لكل جرم.
+- **تحدي الفضاء والشهادة الرقمية المعتمدة** — اختبار معرفي تفاعلي يتيح إصدار شهادة شكر وتقدير رسمية باسم الطالب قابلة للطباعة المباشرة وحفظها PDF.
+- **نافذة التقرير الموثق** — عرض التقرير الشامل والموثق للفعالية بملء الشاشة مع دعم الطباعة.
 
 ---
 
@@ -57,6 +48,8 @@
 ```text
 ├── index.html          # الملف الرئيسي والواجهة التفاعلية الشاملة
 ├── report.html         # التقرير الختامي والتوثيقي الكامل للفعالية
+├── LICENSE             # رخصة المشروع الرسمية (MIT License)
+├── LICENSE.ar.md       # الترجمة العربية للرخصة
 ├── README.md           # دليل التوثيق والتعريف بالمشروع
 └── images/             # مجلد الوسائط والصور المعتمدة
     ├── school_logo.png # شعار مدارس الفرسان الأهلية
@@ -86,15 +79,10 @@
 * الطالب: **محمد الحازمي**
 * الطالب: **أحمد بيت المال**
 * الطالب: **عبدالحميد طلعت**
+
+
+
 ---
-<p align="center">
-  <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
-</p>
-
-<h1 align="center"> World Space Week Portal | Al-Forsan High School in Makkah </h1>
-<p align="center"><strong>World Space Week Interactive Web Portal (2026)</strong></p>
-
-
 
 An interactive scientific web platform built for **World Space Week 2026** at **Al-Forsan High School in Makkah**. Designed with a modern **Dark Glassmorphism UI**, the portal combines real-time space weather data, interactive physics simulations, deep space discovery modules, and an AI space lab — offering students and visitors an immersive educational journey.
 
@@ -106,34 +94,42 @@ Built with **HTML5, CSS3, and Vanilla JavaScript** — zero heavy frameworks, fu
 
 |  |  |
 | --- | --- |
-| ![AI Space Lab & Navigation](images/planets/earth.jpg) | ![Solar System & Simulators](images/planets/mars.jpg) |
+|  |  |
 
 ---
 
 ## Key Features
 
-- **AI Space Lab** — explore four foundational pillars of AI in deep space:
-  - Autonomous navigation (*AutoNav*) on Mars rovers.
-  - Deep learning algorithms detecting exoplanets via transit light curves.
-  - Orbital debris shield & Non-Terrestrial Networks (*NTN*).
-  - Intelligent astronaut assistants (*CIMON*) and an interactive mission-decision simulator.
-- **Live Space Weather Radar** — visual sweep radar and telemetry monitoring NOAA scales (**G-Scale, S-Scale, R-Scale**) alongside real-time solar wind speed, proton density, and geomagnetic field indices.
-- **3D Solar System & Comparison Matrix** — physical and astronomical data for all 8 planets, the Sun, and Moon phases, paired with a dynamic comparison tool for gravity, diameter, and distance.
-- **Saudi Space Sector (CST & SSA)** — highlights the Kingdom's achievements in space exploration:
-  - Saudi Space Agency (**SSA**) & Communications, Space & Technology Commission (**CST**).
-  - Historic Ax-2 space mission (*Rayyanah Barnawi & Ali AlQarni*) and HRH Prince Sultan bin Salman.
-- **NASA Discovery Hub** — direct integrations with:
-  - 3D interactive NASA Eyes (*Solar System, Earth, Asteroids*).
-  - Astronomy Picture of the Day (*NASA APOD*) with live API support.
-  - James Webb Space Telescope (*JWST*) vs. Hubble comparisons.
-  - Mars weather and Perseverance rover imagery.
-- **PhET Interactive Physics Lab** — embedded simulation sandboxes developed by the University of Colorado Boulder:
-  - Gravity and planetary orbits.
-  - Universal gravitational force calculator.
-  - Multi-body planetary systems & projectile motion.
-- **Planetary Weight Calculator** — interactive tool to calculate weight across multiple celestial bodies based on surface gravity.
-- **Space Quiz & Certified Digital Credential** — a knowledge challenge that generates a printable, customized certificate of completion on the fly.
-- **Project Report Modal** — embedded, full-screen documentation report ready for viewing and PDF export.
+* **AI Space Lab** — explore four foundational pillars of AI in deep space:
+* Autonomous navigation (*AutoNav*) on Mars rovers.
+* Deep learning algorithms detecting exoplanets via transit light curves.
+* Orbital debris shield & Non-Terrestrial Networks (*NTN*).
+* Intelligent astronaut assistants (*CIMON*) and an interactive mission-decision simulator.
+
+
+* **Live Space Weather Radar** — visual sweep radar and telemetry monitoring NOAA scales (**G-Scale, S-Scale, R-Scale**) alongside real-time solar wind speed, proton density, and geomagnetic field indices.
+* **3D Solar System & Comparison Matrix** — physical and astronomical data for all 8 planets, the Sun, and Moon phases, paired with a dynamic comparison tool for gravity, diameter, and distance.
+* **Saudi Space Sector (CST & SSA)** — highlights the Kingdom's achievements in space exploration:
+* Saudi Space Agency (**SSA**) & Communications, Space & Technology Commission (**CST**).
+* Historic Ax-2 space mission (*Rayyanah Barnawi & Ali AlQarni*) and HRH Prince Sultan bin Salman.
+
+
+* **NASA Discovery Hub** — direct integrations with:
+* 3D interactive NASA Eyes (*Solar System, Earth, Asteroids*).
+* Astronomy Picture of the Day (*NASA APOD*) with live API support.
+* James Webb Space Telescope (*JWST*) vs. Hubble comparisons.
+* Mars weather and Perseverance rover imagery.
+
+
+* **PhET Interactive Physics Lab** — embedded simulation sandboxes developed by the University of Colorado Boulder:
+* Gravity and planetary orbits.
+* Universal gravitational force calculator.
+* Multi-body planetary systems & projectile motion.
+
+
+* **Planetary Weight Calculator** — interactive tool to calculate weight across multiple celestial bodies based on surface gravity.
+* **Space Quiz & Certified Digital Credential** — a knowledge challenge that generates a printable, customized certificate of completion on the fly.
+* **Project Report Modal** — embedded, full-screen documentation report ready for viewing and PDF export.
 
 ---
 
@@ -142,6 +138,8 @@ Built with **HTML5, CSS3, and Vanilla JavaScript** — zero heavy frameworks, fu
 ```text
 ├── index.html          # Core single-page interactive application
 ├── report.html         # Comprehensive documentation & event report
+├── LICENSE             # Project license (MIT License)
+├── LICENSE.ar.md       # Arabic translation of the license
 ├── README.md           # Project documentation
 └── images/             # Visual assets and media directory
     ├── school_logo.png # Al-Forsan High School emblem
@@ -159,7 +157,6 @@ Built with **HTML5, CSS3, and Vanilla JavaScript** — zero heavy frameworks, fu
 The portal is continuously deployed and accessible globally via GitHub Pages:
 
 **[🌐 Visit the Live Portal](https://gmc2000.github.io/World-Space-Week-Portal/)**
-
 
 ---
 
@@ -181,7 +178,6 @@ The portal is continuously deployed and accessible globally via GitHub Pages:
 
 This educational platform is published under the [MIT License](https://www.google.com/search?q=LICENSE) for World Space Week 2026.
 
----
+```
 
-
----
+```
