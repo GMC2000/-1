@@ -77,7 +77,7 @@
 - **فريق العمل والتنفيذ الطلابي:**
   - الطالب: **محمد الحازمي**
   - الطالب: **أحمد بيت المال**
-  - الطالب: **عبدالحميد طلعت**
+  - الطالب: **يحيى عسكري**
 
 ---
 
@@ -173,7 +173,7 @@ The platform is hosted and deployed entirely via GitHub Pages and can be accesse
 - **Student Development & Execution Team:**
   - Student: **Mohammed Al-Hazmi**
   - Student: **Ahmed Beit El-Mal**
-  - Student: **Abdulhamid Talaat**
+  - Student: **Yahya Askari**
 
 ---
 
