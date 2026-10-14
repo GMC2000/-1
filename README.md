@@ -197,5 +197,3 @@ The platform is hosted and deployed entirely via GitHub Pages and can be accesse
 This educational platform is published under the [MIT License](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE) for World Space Week 2026.
 
 ```
-
-```
