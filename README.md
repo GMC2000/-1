@@ -6,7 +6,8 @@
 <p align="center"><strong>البوابة الإلكترونية التفاعلية لأسبوع الفضاء العالمي (2026)</strong></p>
 
 <p align="center">
-  <a href="https://gmc2000.github.io/World-Space-Week-Portal/">🌐 زيارة المنصة مباشرة</a>
+  <a href="https://gmc2000.github.io/World-Space-Week-Portal/">🌐 زيارة المنصة مباشرة</a> •
+  <a href="#english">English Version 🇬🇧</a>
 </p>
 
 منصة ويب علمية تفاعلية تم تطويرها بمناسبة **أسبوع الفضاء العالمي 2026** بـ **ثانوية الفرسان الأهلية بمكة المكرمة**. صُممت المنصة بنمط **الواجهات الزجاجية المظلمة (Dark Glassmorphism)** الحديث، وتجمع بين الرصد الفوري للطقس الفضائي، وتطبيقات الذكاء الاصطناعي في الفضاء السحيق، ومحاكيات الفيزياء المدارية، وجناح الفضاء السعودي ووكالة ناسا.
@@ -71,30 +72,32 @@
 
 ## بطاقة المشروع والاعتماد التعليمي
 
-- **المدرسة:** ثانوية الفرسان الأهلية بمكة المكرمة
-- **المشرف العام ومدير المدرسة:** أ. محسن ردة الله الصاعدي
-- **المعلم المشرف:** أ. أيمن البنا
-- **فريق العمل والتنفيذ الطلابي:**
-  - الطالب: **محمد الحازمي**
-  - الطالب: **أحمد بيت المال**
-  - الطالب: **يحيى عسكري**
+* **المدرسة:** ثانوية الفرسان الأهلية بمكة المكرمة
+* **المشرف العام ومدير المدرسة:** أ. محسن ردة الله الصاعدي
+* **المعلم المشرف:** أ. أيمن البنا
+
+---
+
+## فريق العمل والمساهمون (Contributors) 👥
+
+| المساهم | الدور والمهام |
+| --- | --- |
+| **محمد الحازمي** | التطوير البرمجي وهندسة الواجهات وتكامل الـ APIs |
+| **أحمد بيت المال** | إعداد المحتوى العلمي ومراجعة بيانات النظام الشمسي |
+| **يحيى عسكري** | التوثيق وإعداد التقارير ومساندة التصميم |
+
+### أدوات الذكاء الاصطناعي المساندة (AI Tools & Platforms) 🤖
+
+* [OpenAI](https://github.com/openai) — دعم صياغة وتوليد المحتوى المعرفي.
+* [Claude](https://github.com/claude) — المساعدة في هيكلة التوثيق وتنسيقات الويب.
+* [Gemini Code Assist](https://github.com/gemini-code-assist) — التدقيق البرمجي وتحسين تكامل واجهات المستخدم.
 
 ---
 
 ## الترخيص
 
-تم نشر هذه المنصة التعليمية بموجب [MIT رخصة](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE.ar.md) لأسبوع الفضاء العالمي 2026.
+تم نشر هذه المنصة التعليمية بموجب [رخصة MIT](https://github.com/GMC2000/World-Space-Week-Portal/blob/main/LICENSE.ar.md) لأسبوع الفضاء العالمي 2026.
 
-<p align="center">
-  <img src="images/school_logo.png" alt="World Space Week Portal" width="180" />
-</p>
-
-<h1 align="center" id="english">World Space Week Portal | Al-Fursan Private High School</h1>
-<p align="center"><strong>Interactive Web Portal for World Space Week (2026)</strong></p>
-
-<p align="center">
-  <a href="https://gmc2000.github.io/World-Space-Week-Portal/">🌐 Visit Platform Live</a>
-</p>
 ---
 
 An interactive educational web platform developed on the occasion of **World Space Week 2026** by **Al-Fursan Private High School in Makkah**. Designed with a modern **Dark Glassmorphism** aesthetic, the platform combines real-time space weather monitoring, deep-space AI applications, orbital physics simulations, and interactive showcases for both the Saudi Space sector and NASA.
@@ -167,13 +170,25 @@ The platform is hosted and deployed entirely via GitHub Pages and can be accesse
 
 ## Project Credits & Educational Accreditation
 
-- **School:** Al-Fursan Private High School, Makkah
-- **General Supervisor & School Principal:** Mr. Mohsen Raddatullah Al-Saeedi
-- **Supervising Teacher:** Mr. Ayman Al-Banna
-- **Student Development & Execution Team:**
-  - Student: **Mohammed Al-Hazmi**
-  - Student: **Ahmed Beit El-Mal**
-  - Student: **Yahya Askari**
+* **School:** Al-Fursan Private High School, Makkah
+* **General Supervisor & School Principal:** Mr. Mohsen Raddatullah Al-Saeedi
+* **Supervising Teacher:** Mr. Ayman Al-Banna
+
+---
+
+## Project Contributors 👥
+
+| Contributor | Role & Responsibilities |
+| --- | --- |
+| **Mohammed Al-Hazmi** | Lead Software Developer, UI Engineering & APIs Integration |
+| **Ahmed Beit El-Mal** | Scientific Content Research & Solar System Data Verification |
+| **Yahya Askari** | Documentation, Event Reporting & Design Assistance |
+
+### AI Technologies & Assisted Tools 🤖
+
+* [OpenAI](https://github.com/openai) — Educational content drafting and synthesis.
+* [Claude](https://github.com/claude) — Documentation structuring and web styling assistance.
+* [Gemini Code Assist](https://github.com/gemini-code-assist) — Code review and UI component integration.
 
 ---
 
